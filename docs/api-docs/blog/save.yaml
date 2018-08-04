@@ -1,0 +1,84 @@
+/blog:
+    put:
+        tags:
+            - Blog
+        description:
+           Blog save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null    
+                            name:
+                                type: string
+                                example: "admin"  
+                            description:
+                                type: string
+                                example: "admin"            
+                            author:
+                                type: string
+                                example: "zfd"
+                            getBy:
+                                type: string
+                                example: "weekdays"
+                            share:
+                                type: string
+                                example: "Upcoming / Ongoing / Online"
+                            like:
+                                type: string
+                                example: "Upcoming / Ongoing / Online"
+                            domain:
+                                type: string
+                                example: "Upcoming / Ongoing / Online"
+                            image:
+                                type: string
+                                example: ""
+                            imageAlt:
+                                type: string
+                                example: "20"
+                            video:
+                                type: string
+                                example: ""
+                            videoAlt:
+                                type: string
+                                example: "20"                                
+                            intro:
+                                type: array
+                                items:
+                                    type: string
+                                    example: "sdfd"
+                            qa:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        query:
+                                            type: string
+                                            example: "title"
+                                        ans:
+                                            type: string
+                                            example: "Devops"  
+                            advantage:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        why:
+                                            type: string
+                                            example: "title"
+                                        reason:
+                                            type: string
+                                            example: "Devops"  
+                            date:
+                                type: Date
+                                example: "2018-04-21"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

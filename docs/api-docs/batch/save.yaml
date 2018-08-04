@@ -1,0 +1,48 @@
+/batch:
+    put:
+        tags:
+            - Batch
+        description:
+           Batch save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null    
+                            name:
+                                type: string
+                                example: "admin"            
+                            startDate:
+                                type: Date
+                                example: "2018-03-25"
+                            type:
+                                type: string
+                                example: "weekdays"
+                            status:
+                                type: string
+                                example: "Upcoming / Ongoing / Online"
+                            time:
+                                type: string
+                                example: ""
+                            seats:
+                                type: number
+                                example: 20
+                            branch:
+                                type: string
+                                example: "Gachibowli"
+                            country:
+                                type: string
+                                example: "India"  
+                            course:
+                                type: string
+                                example: "DevOps"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

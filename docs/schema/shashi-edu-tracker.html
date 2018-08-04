@@ -1,0 +1,2275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml' >
+<head>
+<title>Digi&#45;Edu&#45;Tracker</title>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+<style type='text/css'>
+body {
+    font-family: 'Segoe UI', 'Lucida sans', Dialog;
+    font-size: 13px;
+    color: #444;
+    margin: 10px;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    caption-side: top;
+    width: auto;
+    margin: 10px 15px 5px 0;
+}
+
+
+.bordered td, .bordered th {
+   background-color: #fafafa;
+   border: 1px solid #D5D5D5;
+   padding: 3px 3px 3px 3px;
+   white-space:pre-wrap!important;
+}
+
+.bordered th {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 3px 3px 3px 3px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.section-header h2 {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: normal;
+    border-top: solid 1px #D5D5D5;
+    border-bottom: solid 1px #D5D5D5;
+    width: 95%;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    color: #4d82b8;
+}
+.section-header div {
+    font-size: 70%;
+    padding-left: 5px;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: #044282;
+  text-decoration: none;
+}
+
+th > a {
+    color:#858585;
+}
+
+.lg {
+    font-size: 110%;
+}
+
+h1 {
+    font-family: Verdana,Arial,Helvetica;
+    font-weight: normal;
+    color: #4d82b8;
+    margin: 20px 0 10px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class='svg-container'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' text-rendering='optimizeLegibility'   width='1088' height='1214' viewbox='0 0 1088 1214' >
+  <script type='text/ecmascript'>
+  <![CDATA[
+  function hghl(el) { for ( var i in el ){ document.getElementById(el[i]).setAttribute('class','highlight');  }  }
+  function uhghl(el) { for ( var i in el ){ document.getElementById(el[i]).setAttribute('class','scene'); }  } 
+  ]]>
+  </script> 
+
+<style type='text/css'>
+  text                { fill:#000000; font-family: Trebuchet MS, 'Trebuchet MS', Dialog; font-size:12px; }
+  a text:hover        { text-shadow: 0 0 6px #d0ce00; }
+  text.highlight      { text-shadow: 0 0 4px #eac533; }
+  text.colType        { fill:#b3b3b3; }
+  text.relName        { fill:#b09c7c; }
+  path                { stroke:#5c554f; stroke-width:1.15; fill:none; }
+  path.virtual        { stroke:#b7642d; }
+  path.dotted         { stroke-dasharray:4,2; }
+  path.scene          { stroke-width:10; opacity:0;}
+  path.highlight      { stroke-width:5; stroke:#eac533; opacity:0.6;}
+  rect.table          { fill:#ffffff; stroke:#aaa; stroke-width:1;shape-rendering:crispEdges;filter:url(#shadow); }
+  line.delim          { stroke-width:1; shape-rendering:crispEdges; }
+  text.callout        { fill:#000000; font-family: Trebuchet MS, 'Trebuchet MS', Dialog; font-size:12px; }
+  rect.callout        { fill:url(#calloutGradient); stroke:#bebdbd; stroke-width:0.5; filter: url(#shadow);}
+  rect.grp            { stroke:#b1b1b1; stroke-width:1.7; opacity:0.8; }
+</style>
+<defs>
+  <pattern id='layoutBgA' patternUnits='userSpaceOnUse'  width='10' height='20' x='0' y='0' viewBox='0 0 5 10'>  
+     <line x1='-2' y1='1' x2='7' y2='10' stroke='#efefef' stroke-width='.5'/>  
+     <line x1='-2' y1='6' x2='7' y2='15' stroke='#efefef' stroke-width='.5'/>  
+     <line x1='-2' y1='-4' x2='7' y2='5' stroke='#efefef' stroke-width='.5'/>  
+  </pattern>  
+  <radialGradient id='layoutBgB' gradientUnits='userSpaceOnUse' cx='50%' cy='50%' r='75%' fx='46%' fy='22%'>
+     <stop offset='0%' stop-opacity='.2' stop-color='#f5f5f5' />  
+     <stop offset='100%' stop-color='#efefef' />  
+  </radialGradient>
+  <pattern id='layoutBgTr' patternUnits='userSpaceOnUse'  width='300' height='300' x='0' y='0' viewBox='0 0 300 300'>  
+    <text x='-55' y='200' transform='rotate(-45)' style='font-family:Arial;font-size:48px;font-weight:bold;fill:#e7e7e7;'>&#84;&#82;&#73;&#65;&#76;</text> 
+    <text x='-130' y='230' transform='rotate(-45)' style='font-family:Arial;font-size:24px;font-weight:bold;fill:#e7e7e7;'>&#77;ove &#116;he m&#111;use &#111;ver &#116;ables</text> 
+    <text x='-85' y='250' transform='rotate(-45)' style='font-family:Arial;font-size:24px;font-weight:bold;fill:#e7e7e7;'>&#116;o re&#97;d &#116;he c&#111;mmen&#116;s</text> 
+  </pattern>  
+  <linearGradient id='groupUnderTitleLine' x1='0%' y1='0%' x2='100%' y2='0%' >
+          <stop offset='0%' stop-color='#999999' stop-opacity='0.7'/> 
+          <stop offset='100%' stop-color='#999999' stop-opacity='0' /> 
+   </linearGradient>
+  <radialGradient id='calloutGradient' cx='25%' cy='20%' r='80%' fx='10%' fy='10%'>
+	   <stop offset='0%' stop-color='#ffffff' />
+    <stop offset='100%' stop-color='#f8f6d1' />
+  </radialGradient>
+  <filter id='shadow' width='120%' height='120%'> 
+      <feOffset result='offOut' in='SourceGraphic' dx='1' dy='1' /> 
+      <feColorMatrix result='matrixOut' in='offOut' type='matrix' 
+      values='0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.3 0' /> 
+      <feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='3' /> 
+      <feBlend in='SourceGraphic' in2='blurOut' mode='normal' /> 
+    </filter> 
+  <filter id='fkShadow' height='130%'> 
+    <feGaussianBlur in='SourceAlpha' stdDeviation='1.5'/> <!-- stdDeviation is how much to blur -->
+    <feOffset dx='1.2' dy='1.2' result='offsetblur'/> <!-- how much to offset -->
+    <feMerge>
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in='SourceGraphic'/> <!-- this contains the element that the filter is applied to -->
+    </feMerge>
+  </filter>
+  <radialGradient id='legendGradient' fx='5%' fy='5%' r='75%' spreadMethod='pad'>
+          <stop offset='0%' stop-color='#eefbf2' stop-opacity='1'/> 
+          <stop offset='100%' stop-color='#cff9cb' stop-opacity='1' /> 
+   </radialGradient>
+  <symbol id='calloutArrowDown' overflow='visible' >
+      <path d='M 0,0 L 8,12 L 16,0 z' style='fill:#f8f6d1;stroke:none; filter: url(#shadow);' />
+      <path d='M 0,0 L 8,12 L 16,0' style='stroke:#bebdbd; stroke-width:0.5;' />
+  </symbol>
+  <symbol id='calloutArrowUp' overflow='visible' >
+      <path d='M 0,16 L 8,4 L 16,16 z' style='fill:#ffffff; stroke:none; filter: url(#shadow);' />
+      <path d='M 0,16 L 8,4 L 16,16' style='stroke:#bebdbd; stroke-width:0.5;' />
+  </symbol>
+  <symbol id='pk' overflow='visible' >
+    <g transform='scale(0.99)'>
+     <path style='fill:#fffa7d;stroke:#765f03;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;'
+        d='M 9.3678877,3.5695485 C 9.1030218,3.2729386 9.0796382,2.7628519 9.3396185,2.4517097 9.5449651,2.1956495 9.9040386,2.0980533 10.199638,2.2169415 10.533525,2.3415459 10.775153,2.706942 10.750675,3.0842709 10.737029,3.3980003 10.541153,3.699122 10.258248,3.8066067 9.966649,3.9250429 9.6169668,3.8418805 9.4008073,3.6062324 9.3894892,3.5943518 9.3785264,3.582104 9.3678886,3.5695487 z M 11.226617,6.9916004 C 11.888137,6.3548946 12.293488,5.4172188 12.311087,4.442353 12.378144,2.7379364 11.248678,1.0541269 9.7322318,0.44767357 8.3887112,-0.1280313 6.7865012,0.26822889 5.8918395,1.4007929 5.080823,2.3839145 4.9336815,3.8452096 5.3635544,5.101615 L 4.3670905,5.315913 C 4.0664984,5.3682645 4.0967703,5.6316724 4.2574957,5.8208829 L 4.9124,6.5655244 4.1543436,7.2512357 3.2136002,7.2163506 3.1674775,8.5586827 2.0406832,8.5086512 1.5965306,8.9299953 1.5471661,10.179833 0.75616674,10.195223 0.2112857,10.758575 0.15354288,11.735988 0.07199052,12.765553 c 0.36440953,0.238225 0.79006967,0.195492 1.44938278,-0.02675 L 6.3033562,8.1282037 6.8217102,8.6765688 C 6.9985465,8.8799427 7.3003699,8.7497574 7.358381,8.5016252 L 7.4938877,7.5084164 c 0.8537488,0.3985387 1.8303125,0.4711541 2.6851793,0.1427713 0.393927,-0.1407258 0.746858,-0.3701772 1.04755,-0.6595873 z'/>
+     <path d='M 6.8014948,6.3102123 0.15369063,13.024481 0.21560535,12.141962 6.0062342,6.2683782 z'
+        style='fill:#ffe5a5;fill-opacity:1;stroke:#854e31;stroke-width:0.06912433;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:3.00300009'/>
+    </g>
+  </symbol>
+  <symbol id='unq' overflow='visible' >
+    <g transform='scale(0.99)'>
+      <rect style='fill:#fbea8e;stroke:#7e4d31;stroke-width:0.71934468;stroke-linecap:round;stroke-linejoin:round;'
+         width='2.29' height='8.43' x='7.48' y='-0.76' ry='1.14' transform='matrix(0.701,0.713,-0.727,0.685,0,0)' />
+      <path style='fill:white;stroke:#858585;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;'
+         d='m 26.04,8.64 a 4.13,4.13 0 1 1 -8.26,0 4.13,4.13 0 1 1 8.26,0 z'
+         transform='matrix(1.025,0,0,0.987,-14.690,-3.862)' />
+      <text x='5.8' y='7.4' style='font-size:7px;fill:#8a8a8a;'>1</text>
+    </g>
+  </symbol>
+  <symbol id='idx' overflow='visible' >
+    <g transform='scale(0.99)'>
+      <rect style='fill:#fbea8e;stroke:#7e4d31;stroke-width:0.71934468;stroke-linecap:round;stroke-linejoin:round;'
+         width='2.29' height='8.43' x='7.48' y='-0.76' ry='1.14' transform='matrix(0.701,0.713,-0.727,0.685,0,0)' />
+      <path style='fill:white;stroke:#858585;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;'
+         d='m 26.04,8.64 a 4.13,4.13 0 1 1 -8.26,0 4.13,4.13 0 1 1 8.26,0 z'
+         transform='matrix(1.025,0,0,0.987,-14.690,-3.862)' />
+    </g>
+  </symbol>
+  <symbol id='fk' overflow='visible' >
+    <g transform='scale(0.87)'>
+      <path style='fill:#f3e1b7;stroke:#7e471f;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+      d='M 12.48,0.33 7.07,0.89 9.067,2.974 0.329,11.731 1.073,12.597 9.811,3.841 11.77,5.78 z' />
+    </g>
+  </symbol>
+  <symbol id='ref' overflow='visible' >
+    <g transform='scale(0.87)'>
+      <path style='fill:#f3e1b7;stroke:#7e471f;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.10,12.70 5.31,12.15 3.40,10.06 11.82,1.32 11.11,0.45 2.68,9.19 0.80,7.24 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag0' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#b7d0f6;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag1' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#f4a393;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag2' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#77ec8b;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='nn' overflow='visible' >
+  <path style='stroke:#9b3e50;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0,0 3,3 M 0,3 3,0 z'/>
+  </symbol>
+  <symbol id='view' overflow='visible' >
+    <g transform='scale(0.99)'>
+     <line x1='12' y1='6' x2='19' y2='0' stroke='black' stroke-width='0.5' />
+     <line x1='0' y1='6' x2='7' y2='0' stroke='black' stroke-width='0.5' />
+     <circle cx='3' cy='6' r='3' fill='#f9ebbc' stroke='black' stroke-width='0.5'/>
+     <circle cx='10' cy='6' r='3' fill='#f9ebbc' stroke='black' stroke-width='0.5'/>
+    </g>
+  </symbol>
+  <marker id='arrow01' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+  </marker>
+  <marker id='arrow1' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+  </marker>
+  <marker id='foot01' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 1.60,4.00 L 3.20,4.00 L 4.80,4.00 L 6.40,4.00 z' />
+  </marker>
+  <marker id='foot0p' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 1.60,4.00 L 3.20,4.00 L 4.80,4.00 L 6.40,4.00 z' />
+    <path d='M 0.00,0.00 L 8.00,4.00 L 0.00,8.00' />
+  </marker>
+  <marker id='foot1' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+  </marker>
+  <marker id='foot1p' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+    <path d='M 0.00,0.00 L 8.00,4.00 L 0.00,8.00' />
+  </marker>
+  <linearGradient id='tbg_c1d8ee' x1='0%' y1='0%' x2='0%' y2='100%' >
+     <stop offset='0%' stop-color='#e0ecf8' /> 
+     <stop offset='100%' stop-color='#c1d8ee' /> 
+  </linearGradient>
+  <linearGradient id='tbg_ffcccc' x1='0%' y1='0%' x2='0%' y2='100%' >
+     <stop offset='0%' stop-color='#f8e0e0' /> 
+     <stop offset='100%' stop-color='#eec1c1' /> 
+  </linearGradient>
+</defs>
+
+<!-- ============= Desktop ============= -->
+<rect x='1' y='1' width='1086' height='1212' rx='8' ry='8' style='fill:url(#layoutBgB); stroke:#333333; stroke-width:0.5;' />
+<rect x='1' y='1' width='1086' height='1212' rx='8' ry='8' style='fill:url(#layoutBgTr);' />
+<rect x='1' y='1' width='1086' height='1212' rx='8' ry='8' style='fill:url(#layoutBgA); stroke:#333333; stroke-width:0.5;' />
+
+<!-- ============= Legend ============= -->
+<g transform='translate(10,10)'>
+  <rect x='10' y='10' width='330' height='52' rx='6' ry='6' style='fill:url(#legendGradient);filter:url(#shadow);'/> 
+  <text x='65' y='33'>Digi-Edu-Tracker</text> 
+  <text x='65' y='49' style='fill:#aaaaaa; font-size:11px;'><tspan>Read table &amp; column comments as mouse-over tooltips.</tspan></text> 
+<g transform="scale(0.75,0.75) translate(10,7)" > <a xlink:href='http://www.dbschema.com'> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="40.04" y="59.44" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="54.83" y="59.57" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="40.35" y="71.62" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="54.68" y="71.75" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="13.48" y="19.67" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="28.36" y="19.80" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="13.79" y="31.78" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="28.21" y="31.92" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="34.59" y="-9.62" ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="49.63" y="-9.46" ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="34.90" y="5.77"  ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="49.47" y="5.93"  ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <title>Generated using DbSchema - www.dbschema.com</title> </a></g>
+</g>
+
+<g transform='translate(0,110)'>
+<!-- ============= Fk 'BatchStudentAssignments_fk_batchstudentassignments' ============= -->
+<path id='BatchStudentAssignments_fk_batchstudentassignments'  onmouseover="hghl(['BatchStudentAssignments_fk_batchstudentassignments','test.BatchStudentAssignments.batchAssignmentId','test.BatchAssignments._id'])" onmouseout="uhghl(['BatchStudentAssignments_fk_batchstudentassignments','test.BatchStudentAssignments.batchAssignmentId','test.BatchAssignments._id'])" transform='translate(8,0)' class='scene' d='M 480 784 L 440,784 Q 432,784 432,776 L 432,760 Q 432,752 424,752 L 416,752' >
+	<title>Fk fk_batchstudentassignments
+BatchStudentAssignments ref BatchAssignments ( batchAssignmentId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 480 784 L 440,784 Q 432,784 432,776 L 432,760 Q 432,752 424,752 L 416,752' ></path>
+<text x='386' y='779' transform='rotate(0 386,779)' title='Fk fk_batchstudentassignments
+BatchStudentAssignments ref BatchAssignments ( batchAssignmentId -&gt; _id )' class='relName' style='fill:#748ea7'>batchAssignmentId</text>
+<!-- ============= Fk 'BatchAssignmentReviews_fk_batchassignment_reviews' ============= -->
+<path id='BatchAssignmentReviews_fk_batchassignment_reviews'  onmouseover="hghl(['BatchAssignmentReviews_fk_batchassignment_reviews','test.BatchAssignmentReviews.batchStudentAssignmentId','test.BatchStudentAssignments._id'])" onmouseout="uhghl(['BatchAssignmentReviews_fk_batchassignment_reviews','test.BatchAssignmentReviews.batchStudentAssignmentId','test.BatchStudentAssignments._id'])" transform='translate(8,0)' class='scene' d='M 896 784 L 904,784 Q 912,784 912,792 L 912,824 Q 912,832 904,832 L 472,832 Q 464,832 464,824 L 464,712 Q 464,704 472,704 L 480,704' >
+	<title>Fk fk_batchassignment_reviews
+BatchAssignmentReviews ref BatchStudentAssignments ( batchStudentAssignmentId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 896 784 L 904,784 Q 912,784 912,792 L 912,824 Q 912,832 904,832 L 472,832 Q 464,832 464,824 L 464,712 Q 464,704 472,704 L 480,704' ></path>
+<text x='905' y='779' transform='rotate(0 905,779)' title='Fk fk_batchassignment_reviews
+BatchAssignmentReviews ref BatchStudentAssignments ( batchStudentAssignmentId -&gt; _id )' class='relName' style='fill:#748ea7'>batchStudentAssignmentId</text>
+<!-- ============= Fk 'BatchAssignmentReviews_fk_batchassignmentreviews_questions' ============= -->
+<path id='BatchAssignmentReviews_fk_batchassignmentreviews_questions'  onmouseover="hghl(['BatchAssignmentReviews_fk_batchassignmentreviews_questions','test.BatchAssignmentReviews.questionId','test.Questions._id'])" onmouseout="uhghl(['BatchAssignmentReviews_fk_batchassignmentreviews_questions','test.BatchAssignmentReviews.questionId','test.Questions._id'])" transform='translate(8,0)' class='scene' d='M 896 768 L 920,768 Q 928,768 928,776 L 928,840 Q 928,848 920,848 L 456,848 Q 448,848 448,840 L 448,392 Q 448,384 456,384 L 496,384' >
+	<title>Fk fk_batchassignmentreviews_questions
+BatchAssignmentReviews ref Questions ( questionId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 896 768 L 920,768 Q 928,768 928,776 L 928,840 Q 928,848 920,848 L 456,848 Q 448,848 448,840 L 448,392 Q 448,384 456,384 L 496,384' ></path>
+<text x='905' y='763' transform='rotate(0 905,763)' title='Fk fk_batchassignmentreviews_questions
+BatchAssignmentReviews ref Questions ( questionId -&gt; _id )' class='relName' style='fill:#748ea7'>questionId</text>
+<!-- ============= Fk 'Users_fk_users_profiles' ============= -->
+<path id='Users_fk_users_profiles'  onmouseover="hghl(['Users_fk_users_profiles','test.Users.profileId','test.Profiles._id'])" onmouseout="uhghl(['Users_fk_users_profiles','test.Users.profileId','test.Profiles._id'])" transform='translate(8,0)' class='scene' d='M 176 272 L 184,272 Q 192,272 192,264 L 192,136 Q 192,128 200,128 L 208,128' >
+	<title>Fk fk_users_profiles
+Users ref Profiles ( profileId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 176 272 L 184,272 Q 192,272 192,264 L 192,136 Q 192,128 200,128 L 208,128' ></path>
+<text x='185' y='267' transform='rotate(0 185,267)' title='Fk fk_users_profiles
+Users ref Profiles ( profileId -&gt; _id )' class='relName' style='fill:#748ea7'>profileId</text>
+<!-- ============= Fk 'Topics_fk_topics_courses' ============= -->
+<path id='Topics_fk_topics_courses'  onmouseover="hghl(['Topics_fk_topics_courses','test.Topics.courseId','test.Courses._id'])" onmouseout="uhghl(['Topics_fk_topics_courses','test.Topics.courseId','test.Courses._id'])" transform='translate(8,0)' class='scene' d='M 240 416 L 200,416 Q 192,416 192,408 L 192,376 Q 192,368 184,368 L 176,368' >
+	<title>Fk fk_topics_courses
+Topics ref Courses ( courseId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 240 416 L 200,416 Q 192,416 192,408 L 192,376 Q 192,368 184,368 L 176,368' ></path>
+<text x='203' y='411' transform='rotate(0 203,411)' title='Fk fk_topics_courses
+Topics ref Courses ( courseId -&gt; _id )' class='relName' style='fill:#748ea7'>courseId</text>
+<!-- ============= Fk 'MenuAccess_fk_menuaccess_menus' ============= -->
+<path id='MenuAccess_fk_menuaccess_menus'  onmouseover="hghl(['MenuAccess_fk_menuaccess_menus','test.MenuAccess.menuId','test.Menus._id'])" onmouseout="uhghl(['MenuAccess_fk_menuaccess_menus','test.MenuAccess.menuId','test.Menus._id'])" transform='translate(8,0)' class='scene' d='M 640 112 L 680,112 Q 688,112 688,104 L 688,88 Q 688,80 696,80 L 704,80' >
+	<title>Fk fk_menuaccess_menus
+MenuAccess ref Menus ( menuId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 640 112 L 680,112 Q 688,112 688,104 L 688,88 Q 688,80 696,80 L 704,80' ></path>
+<text x='649' y='107' transform='rotate(0 649,107)' title='Fk fk_menuaccess_menus
+MenuAccess ref Menus ( menuId -&gt; _id )' class='relName' style='fill:#748ea7'>menuId</text>
+<!-- ============= Fk 'Questions_fk_questions_topics' ============= -->
+<path id='Questions_fk_questions_topics'  onmouseover="hghl(['Questions_fk_questions_topics','test.Questions.topicId','test.Topics._id'])" onmouseout="uhghl(['Questions_fk_questions_topics','test.Questions.topicId','test.Topics._id'])" transform='translate(8,0)' class='scene' d='M 496 592 L 488,592 Q 480,592 480,584 L 480,280 Q 480,272 472,272 L 464,272' >
+	<title>Fk fk_questions_topics
+Questions ref Topics ( topicId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 496 592 L 488,592 Q 480,592 480,584 L 480,280 Q 480,272 472,272 L 464,272' ></path>
+<text x='468' y='587' transform='rotate(0 468,587)' title='Fk fk_questions_topics
+Questions ref Topics ( topicId -&gt; _id )' class='relName' style='fill:#748ea7'>topicId</text>
+<!-- ============= Fk 'BatchForums_fk_batchforums_batchs' ============= -->
+<path id='BatchForums_fk_batchforums_batchs'  onmouseover="hghl(['BatchForums_fk_batchforums_batchs','test.BatchForums.batchId','test.Batchs._id'])" onmouseout="uhghl(['BatchForums_fk_batchforums_batchs','test.BatchForums.batchId','test.Batchs._id'])" transform='translate(8,0)' class='scene' d='M 192 1008 L 232,1008 Q 240,1008 240,1000 L 240,832' >
+	<title>Fk fk_batchforums_batchs
+BatchForums ref Batchs ( batchId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 192 1008 L 232,1008 Q 240,1008 240,1000 L 240,832' ></path>
+<text x='201' y='1003' transform='rotate(0 201,1003)' title='Fk fk_batchforums_batchs
+BatchForums ref Batchs ( batchId -&gt; _id )' class='relName' style='fill:#748ea7'>batchId</text>
+<!-- ============= Fk 'BatchForumComments_fk_batchforumcomments' ============= -->
+<path id='BatchForumComments_fk_batchforumcomments'  onmouseover="hghl(['BatchForumComments_fk_batchforumcomments','test.BatchForumComments.batchForumId','test.BatchForums._id'])" onmouseout="uhghl(['BatchForumComments_fk_batchforumcomments','test.BatchForumComments.batchForumId','test.BatchForums._id'])" transform='translate(8,0)' class='scene' d='M 272 1024 L 216,1024 Q 208,1024 208,1016 L 208,936 Q 208,928 200,928 L 192,928' >
+	<title>Fk fk_batchforumcomments
+BatchForumComments ref BatchForums ( batchForumId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 272 1024 L 216,1024 Q 208,1024 208,1016 L 208,936 Q 208,928 200,928 L 192,928' ></path>
+<text x='206' y='1019' transform='rotate(0 206,1019)' title='Fk fk_batchforumcomments
+BatchForumComments ref BatchForums ( batchForumId -&gt; _id )' class='relName' style='fill:#748ea7'>batchForumId</text>
+<!-- ============= Fk 'BatchAssignments_fk_batchassignments_batchs' ============= -->
+<path id='BatchAssignments_fk_batchassignments_batchs'  onmouseover="hghl(['BatchAssignments_fk_batchassignments_batchs','test.BatchAssignments.batchId','test.Batchs._id'])" onmouseout="uhghl(['BatchAssignments_fk_batchassignments_batchs','test.BatchAssignments.batchId','test.Batchs._id'])" transform='translate(8,0)' class='scene' d='M 256 848 L 248,848 Q 240,848 240,840 L 240,664 Q 240,656 232,656 L 224,656' >
+	<title>Fk fk_batchassignments_batchs
+BatchAssignments ref Batchs ( batchId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 256 848 L 248,848 Q 240,848 240,840 L 240,664 Q 240,656 232,656 L 224,656' ></path>
+<text x='224' y='843' transform='rotate(0 224,843)' title='Fk fk_batchassignments_batchs
+BatchAssignments ref Batchs ( batchId -&gt; _id )' class='relName' style='fill:#748ea7'>batchId</text>
+<!-- ============= Fk 'BatchAssignments_fk_batchassignments_topics' ============= -->
+<path id='BatchAssignments_fk_batchassignments_topics'  onmouseover="hghl(['BatchAssignments_fk_batchassignments_topics','test.BatchAssignments.topicId','test.Topics._id'])" onmouseout="uhghl(['BatchAssignments_fk_batchassignments_topics','test.BatchAssignments.topicId','test.Topics._id'])" transform='translate(8,0)' class='scene' d='M 256 832 L 232,832 Q 224,832 224,824 L 224,768' >
+	<title>Fk fk_batchassignments_topics
+BatchAssignments ref Topics ( topicId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 256 832 L 232,832 Q 224,832 224,824 L 224,768' ></path>
+<text x='228' y='827' transform='rotate(0 228,827)' title='Fk fk_batchassignments_topics
+BatchAssignments ref Topics ( topicId -&gt; _id )' class='relName' style='fill:#748ea7'>topicId</text>
+<!-- ============= Fk 'BatchTrainer_fk_batchtrainer_users_trainer' ============= -->
+<path id='BatchTrainer_fk_batchtrainer_users_trainer'  onmouseover="hghl(['BatchTrainer_fk_batchtrainer_users_trainer','test.BatchTrainer.trainerId','test.Users._id'])" onmouseout="uhghl(['BatchTrainer_fk_batchtrainer_users_trainer','test.BatchTrainer.trainerId','test.Users._id'])" transform='translate(8,0)' class='scene' d='M 272 640 L 264,640 Q 256,640 256,632 L 256,520 Q 256,512 248,512 L 240,512' >
+	<title>Fk fk_batchtrainer_users_trainer
+BatchTrainer ref Users ( trainerId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 272 640 L 264,640 Q 256,640 256,632 L 256,520 Q 256,512 248,512 L 240,512' ></path>
+<text x='233' y='635' transform='rotate(0 233,635)' title='Fk fk_batchtrainer_users_trainer
+BatchTrainer ref Users ( trainerId -&gt; _id )' class='relName' style='fill:#748ea7'>trainerId</text>
+<!-- ============= Fk 'BatchTrainer_fk_batchtrainer_batchs' ============= -->
+<path id='BatchTrainer_fk_batchtrainer_batchs'  onmouseover="hghl(['BatchTrainer_fk_batchtrainer_batchs','test.BatchTrainer.batchId','test.Batchs._id'])" onmouseout="uhghl(['BatchTrainer_fk_batchtrainer_batchs','test.BatchTrainer.batchId','test.Batchs._id'])" transform='translate(8,0)' class='scene' d='M 272 656 L 24,656 Q 16,656 16,648 L 16,640' >
+	<title>Fk fk_batchtrainer_batchs
+BatchTrainer ref Batchs ( batchId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)'   class='virtual'  d='M 272 656 L 24,656 Q 16,656 16,648 L 16,640' ></path>
+<text x='240' y='651' transform='rotate(0 240,651)' title='Fk fk_batchtrainer_batchs
+BatchTrainer ref Batchs ( batchId -&gt; _id )' class='relName' style='fill:#748ea7'>batchId</text>
+<!-- ============= Fk 'BatchStudents_fk_batchstudents_batchs' ============= -->
+<path id='BatchStudents_fk_batchstudents_batchs'  onmouseover="hghl(['BatchStudents_fk_batchstudents_batchs','test.BatchStudents.batchId','test.Batchs._id'])" onmouseout="uhghl(['BatchStudents_fk_batchstudents_batchs','test.BatchStudents.batchId','test.Batchs._id'])" transform='translate(8,0)' class='scene' d='M 272 528 L 192,528' >
+	<title>Fk fk_batchstudents_batchs
+BatchStudents ref Batchs ( batchId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 272 528 L 192,528' ></path>
+<text x='240' y='523' transform='rotate(0 240,523)' title='Fk fk_batchstudents_batchs
+BatchStudents ref Batchs ( batchId -&gt; _id )' class='relName' style='fill:#748ea7'>batchId</text>
+<!-- ============= Fk 'BatchStudents_fk_batchstudents_users' ============= -->
+<path id='BatchStudents_fk_batchstudents_users'  onmouseover="hghl(['BatchStudents_fk_batchstudents_users','test.BatchStudents.studentId','test.Users._id'])" onmouseout="uhghl(['BatchStudents_fk_batchstudents_users','test.BatchStudents.studentId','test.Users._id'])" transform='translate(8,0)' class='scene' d='M 272 512 L 216,512 Q 208,512 208,504 L 208,232 Q 208,224 200,224 L 176,224' >
+	<title>Fk fk_batchstudents_users
+BatchStudents ref Users ( studentId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 272 512 L 216,512 Q 208,512 208,504 L 208,232 Q 208,224 200,224 L 176,224' ></path>
+<text x='228' y='507' transform='rotate(0 228,507)' title='Fk fk_batchstudents_users
+BatchStudents ref Users ( studentId -&gt; _id )' class='relName' style='fill:#748ea7'>studentId</text>
+<!-- ============= Fk 'BatchCurriculums_fk_batchcurriculums_batchs' ============= -->
+<path id='BatchCurriculums_fk_batchcurriculums_batchs'  onmouseover="hghl(['BatchCurriculums_fk_batchcurriculums_batchs','test.BatchCurriculums.batchId','test.Batchs._id'])" onmouseout="uhghl(['BatchCurriculums_fk_batchcurriculums_batchs','test.BatchCurriculums.batchId','test.Batchs._id'])" transform='translate(8,0)' class='scene' d='M 48 768 L 24,768 Q 16,768 16,760 L 16,536 Q 16,528 24,528 L 32,528' >
+	<title>Fk fk_batchcurriculums_batchs
+BatchCurriculums ref Batchs ( batchId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 48 768 L 24,768 Q 16,768 16,760 L 16,536 Q 16,528 24,528 L 32,528' ></path>
+<text x='16' y='763' transform='rotate(0 16,763)' title='Fk fk_batchcurriculums_batchs
+BatchCurriculums ref Batchs ( batchId -&gt; _id )' class='relName' style='fill:#748ea7'>batchId</text>
+<!-- ============= Fk 'BatchCurriculums_fk_batchcurriculums_topics' ============= -->
+<path id='BatchCurriculums_fk_batchcurriculums_topics'  onmouseover="hghl(['BatchCurriculums_fk_batchcurriculums_topics','test.BatchCurriculums.topicId','test.Topics._id'])" onmouseout="uhghl(['BatchCurriculums_fk_batchcurriculums_topics','test.BatchCurriculums.topicId','test.Topics._id'])" transform='translate(8,0)' class='scene' d='M 208 784 L 216,784 Q 224,784 224,776 L 224,344 Q 224,336 232,336 L 240,336' >
+	<title>Fk fk_batchcurriculums_topics
+BatchCurriculums ref Topics ( topicId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 208 784 L 216,784 Q 224,784 224,776 L 224,344 Q 224,336 232,336 L 240,336' ></path>
+<text x='217' y='779' transform='rotate(0 217,779)' title='Fk fk_batchcurriculums_topics
+BatchCurriculums ref Topics ( topicId -&gt; _id )' class='relName' style='fill:#748ea7'>topicId</text>
+<!-- ============= Fk 'Links_fk_videolinks_topics' ============= -->
+<path id='Links_fk_videolinks_topics'  onmouseover="hghl(['Links_fk_videolinks_topics','test.Links.topicId','test.Topics._id'])" onmouseout="uhghl(['Links_fk_videolinks_topics','test.Links.topicId','test.Topics._id'])" transform='translate(8,0)' class='scene' d='M 496 272 L 408,272 Q 400,272 400,280 L 400,328 Q 400,336 392,336 L 384,336' >
+	<title>Fk fk_videolinks_topics
+Links ref Topics ( topicId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 496 272 L 408,272 Q 400,272 400,280 L 400,328 Q 400,336 392,336 L 384,336' ></path>
+<text x='468' y='267' transform='rotate(0 468,267)' title='Fk fk_videolinks_topics
+Links ref Topics ( topicId -&gt; _id )' class='relName' style='fill:#748ea7'>topicId</text>
+<!-- ============= Fk 'Profiles_fk_profiles_accounts' ============= -->
+<path id='Profiles_fk_profiles_accounts'  onmouseover="hghl(['Profiles_fk_profiles_accounts','test.Profiles._id','test.Accounts.profileId'])" onmouseout="uhghl(['Profiles_fk_profiles_accounts','test.Profiles._id','test.Accounts.profileId'])" transform='translate(8,0)' class='scene' d='M 384 96 L 392,96 Q 400,96 400,88 L 400,40 Q 400,32 392,32 L 200,32 Q 192,32 192,24 L 192,24 Q 192,16 184,16 L 8,16 Q 0,16 0,24 L 0,120 Q 0,128 8,128 L 32,128' >
+	<title>Fk fk_profiles_accounts
+Profiles ref Accounts ( _id -&gt; profileId )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'    d='M 384 96 L 392,96 Q 400,96 400,88 L 400,40 Q 400,32 392,32 L 200,32 Q 192,32 192,24 L 192,24 Q 192,16 184,16 L 8,16 Q 0,16 0,24 L 0,120 Q 0,128 8,128 L 32,128' ></path>
+<text x='393' y='91' transform='rotate(0 393,91)' title='Fk fk_profiles_accounts
+Profiles ref Accounts ( _id -&gt; profileId )' class='relName' style='fill:#748ea7'>_id</text>
+<!-- ============= Fk 'Accounts_fk_accounts_profiles' ============= -->
+<path id='Accounts_fk_accounts_profiles'  onmouseover="hghl(['Accounts_fk_accounts_profiles','test.Accounts.profileId','test.Profiles._id'])" onmouseout="uhghl(['Accounts_fk_accounts_profiles','test.Accounts.profileId','test.Profiles._id'])" transform='translate(8,0)' class='scene' d='M 176 128 L 216,128 Q 224,128 224,120 L 224,104 Q 224,96 232,96 L 240,96' >
+	<title>Fk fk_accounts_profiles
+Accounts ref Profiles ( profileId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'  class='virtual'  d='M 176 128 L 216,128 Q 224,128 224,120 L 224,104 Q 224,96 232,96 L 240,96' ></path>
+<text x='185' y='123' transform='rotate(0 185,123)' title='Fk fk_accounts_profiles
+Accounts ref Profiles ( profileId -&gt; _id )' class='relName' style='fill:#748ea7'>profileId</text>
+<!-- ============= Fk 'Accounts_fk_accounts_profilereports' ============= -->
+<path id='Accounts_fk_accounts_profilereports'  onmouseover="hghl(['Accounts_fk_accounts_profilereports','test.Accounts._id','test.ProfileReports.account'])" onmouseout="uhghl(['Accounts_fk_accounts_profilereports','test.Accounts._id','test.ProfileReports.account'])" transform='translate(8,0)' class='scene' d='M 176 80 L 216,80 Q 224,80 224,72 L 224,24 Q 224,16 232,16 L 840,16 Q 848,16 848,24 L 848,248 Q 848,256 840,256 L 784,256' >
+	<title>Fk fk_accounts_profilereports
+Accounts ref ProfileReports ( _id -&gt; account )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow01)'    d='M 176 80 L 216,80 Q 224,80 224,72 L 224,24 Q 224,16 232,16 L 840,16 Q 848,16 848,24 L 848,248 Q 848,256 840,256 L 784,256' ></path>
+<text x='185' y='75' transform='rotate(0 185,75)' title='Fk fk_accounts_profilereports
+Accounts ref ProfileReports ( _id -&gt; account )' class='relName' style='fill:#748ea7'>_id</text>
+<!-- ============= Fk 'Accounts_fk_accounts_attendances' ============= -->
+<path id='Accounts_fk_accounts_attendances'  onmouseover="hghl(['Accounts_fk_accounts_attendances','test.Accounts._id','test.Attendances.account'])" onmouseout="uhghl(['Accounts_fk_accounts_attendances','test.Accounts._id','test.Attendances.account'])" transform='translate(8,0)' class='scene' d='M 32 80 L 24,80 Q 16,80 16,72 L 16,8 Q 16,0 24,0 L 856,0 Q 864,0 864,8 L 864,232 Q 864,240 872,240 L 880,240' >
+	<title>Fk fk_accounts_attendances
+Accounts ref Attendances ( _id -&gt; account )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1)' marker-end='url(#arrow01)'    d='M 32 80 L 24,80 Q 16,80 16,72 L 16,8 Q 16,0 24,0 L 856,0 Q 864,0 864,8 L 864,232 Q 864,240 872,240 L 880,240' ></path>
+<text x='25' y='75' transform='rotate(0 25,75)' title='Fk fk_accounts_attendances
+Accounts ref Attendances ( _id -&gt; account )' class='relName' style='fill:#748ea7'>_id</text>
+<!-- ============= Fk 'Batchs_fk_batchs_courses' ============= -->
+<path id='Batchs_fk_batchs_courses'  onmouseover="hghl(['Batchs_fk_batchs_courses','test.Batchs.courseId','test.Courses._id'])" onmouseout="uhghl(['Batchs_fk_batchs_courses','test.Batchs.courseId','test.Courses._id'])" transform='translate(8,0)' class='scene' d='M 32 592 L 8,592 Q 0,592 0,584 L 0,376 Q 0,368 8,368 L 32,368' >
+	<title>Fk fk_batchs_courses
+Batchs ref Courses ( courseId -&gt; _id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'  class='virtual'  d='M 32 592 L 8,592 Q 0,592 0,584 L 0,376 Q 0,368 8,368 L 32,368' ></path>
+<text x='-5' y='587' transform='rotate(0 -5,587)' title='Fk fk_batchs_courses
+Batchs ref Courses ( courseId -&gt; _id )' class='relName' style='fill:#748ea7'>courseId</text>
+<!-- ============= Table 'BatchStudentAssignments' ============= -->
+<rect class='table' x='496' y='664' width='160' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 496.00 692.00 L 496.00 672.00 Q 496.00 664.00 504.00 664.00 L 648.00 664.00 Q 656.00 664.00 656.00 672.00 L 656.00 692.00 L496.00 692.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='496' y='664' width='160' height='144' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='496.000000' y1='692.000000' x2='656.000000' y2='692.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='512.000000' y1='692.000000' x2='512.000000' y2='808.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='644.000000' y1='692.000000' x2='644.000000' y2='808.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchStudentAssignments'><text x='501' y='684'>BatchStudentAssignments</text><title>Collection test.BatchStudentAssignments</title></a>
+  <use id='nn' x='498' y='701' xlink:href='#nn'/><a xlink:href='#BatchStudentAssignments._id'><use id='pk' x='498' y='700' xlink:href='#pk'/><title>Pk Idx_BatchStudentAssignments ( _id ) </title></a>
+<a xlink:href='#BatchStudentAssignments._id'><text id='test.BatchStudentAssignments._id' x='515' y='711' onmouseover="hghl(['BatchAssignmentReviews_fk_batchassignment_reviews'])" onmouseout="uhghl(['BatchAssignmentReviews_fk_batchassignment_reviews'])">_id</text><text x='640' y='712' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#BatchStudentAssignments._id'><use id='ref' x='644' y='700' xlink:href='#ref'/><title>Referred by BatchAssignmentReviews ( batchStudentAssignmentId -&gt; _id ) </title></a>
+  <a xlink:href='#BatchStudentAssignments.marks'><text id='test.BatchStudentAssignments.marks' x='515' y='727'>marks</text><text x='640' y='728' text-anchor='end' class='colType'>integer</text><title>marks
+integer</title></a>
+<text x='653' y='724' text-anchor='end' class='colType'>#</text>  <a xlink:href='#BatchStudentAssignments.txnDate'><text id='test.BatchStudentAssignments.txnDate' x='515' y='743'>txnDate</text><text x='640' y='744' text-anchor='end' class='colType'>date</text><title>txnDate
+date</title></a>
+<text x='653' y='740' text-anchor='end' class='colType'>d</text>  <a xlink:href='#BatchStudentAssignments.status'><text id='test.BatchStudentAssignments.status' x='515' y='759'>status</text><text x='640' y='760' text-anchor='end' class='colType'>boolean</text><title>status
+boolean default true</title></a>
+<text x='653' y='756' text-anchor='end' class='colType'>b</text>  <use id='nn' x='498' y='765' xlink:href='#nn'/><a xlink:href='#BatchStudentAssignments.studentId'><text id='test.BatchStudentAssignments.studentId' x='515' y='775' onmouseover="hghl(['BatchStudentAssignments_fk_batchstudentassignments_studentId'])" onmouseout="uhghl(['BatchStudentAssignments_fk_batchstudentassignments_studentId'])">studentId</text><text x='640' y='776' text-anchor='end' class='colType'>oid</text><title>studentId
+* oid</title></a>
+<a xlink:href='#BatchStudentAssignments.studentId'><use id='fk' x='644' y='764' xlink:href='#fk'/><title>References Users ( studentId -&gt; _id ) </title></a>
+  <use id='nn' x='498' y='781' xlink:href='#nn'/><a xlink:href='#BatchStudentAssignments.batchAssignmentId'><text id='test.BatchStudentAssignments.batchAssignmentId' x='515' y='791' onmouseover="hghl(['BatchStudentAssignments_fk_batchstudentassignments'])" onmouseout="uhghl(['BatchStudentAssignments_fk_batchstudentassignments'])">batchAssignmentId</text><text x='640' y='792' text-anchor='end' class='colType'>oid</text><title>batchAssignmentId
+* oid</title></a>
+<a xlink:href='#BatchStudentAssignments.batchAssignmentId'><use id='fk' x='644' y='780' xlink:href='#fk'/><title>References BatchAssignments ( batchAssignmentId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchAssignmentReviews' ============= -->
+<rect class='table' x='688' y='680' width='208' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 688.00 708.00 L 688.00 688.00 Q 688.00 680.00 696.00 680.00 L 888.00 680.00 Q 896.00 680.00 896.00 688.00 L 896.00 708.00 L688.00 708.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='688' y='680' width='208' height='128' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='688.000000' y1='708.000000' x2='896.000000' y2='708.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='704.000000' y1='708.000000' x2='704.000000' y2='808.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='884.000000' y1='708.000000' x2='884.000000' y2='808.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchAssignmentReviews'><text x='719' y='700'>BatchAssignmentReviews</text><title>Collection test.BatchAssignmentReviews</title></a>
+  <use id='nn' x='690' y='717' xlink:href='#nn'/><a xlink:href='#BatchAssignmentReviews._id'><use id='pk' x='690' y='716' xlink:href='#pk'/><title>Pk Idx_BatchAssignmentReviews ( _id ) </title></a>
+<a xlink:href='#BatchAssignmentReviews._id'><text id='test.BatchAssignmentReviews._id' x='707' y='727'>_id</text><text x='880' y='728' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#BatchAssignmentReviews.yourAns'><text id='test.BatchAssignmentReviews.yourAns' x='707' y='743'>yourAns</text><text x='880' y='744' text-anchor='end' class='colType'>string</text><title>yourAns
+string</title></a>
+<text x='893' y='740' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchAssignmentReviews.isRightAns'><text id='test.BatchAssignmentReviews.isRightAns' x='707' y='759'>isRightAns</text><text x='880' y='760' text-anchor='end' class='colType'>boolean</text><title>isRightAns
+boolean</title></a>
+<text x='893' y='756' text-anchor='end' class='colType'>b</text>  <use id='nn' x='690' y='765' xlink:href='#nn'/><a xlink:href='#BatchAssignmentReviews.questionId'><text id='test.BatchAssignmentReviews.questionId' x='707' y='775' onmouseover="hghl(['BatchAssignmentReviews_fk_batchassignmentreviews_questions'])" onmouseout="uhghl(['BatchAssignmentReviews_fk_batchassignmentreviews_questions'])">questionId</text><text x='880' y='776' text-anchor='end' class='colType'>oid</text><title>questionId
+* oid</title></a>
+<a xlink:href='#BatchAssignmentReviews.questionId'><use id='fk' x='884' y='764' xlink:href='#fk'/><title>References Questions ( questionId -&gt; _id ) </title></a>
+  <use id='nn' x='690' y='781' xlink:href='#nn'/><a xlink:href='#BatchAssignmentReviews.batchStudentAssignmentId'><text id='test.BatchAssignmentReviews.batchStudentAssignmentId' x='707' y='791' onmouseover="hghl(['BatchAssignmentReviews_fk_batchassignment_reviews'])" onmouseout="uhghl(['BatchAssignmentReviews_fk_batchassignment_reviews'])">batchStudentAssignmentId</text><text x='880' y='792' text-anchor='end' class='colType'>oid</text><title>batchStudentAssignmentId
+* oid</title></a>
+<a xlink:href='#BatchAssignmentReviews.batchStudentAssignmentId'><use id='fk' x='884' y='780' xlink:href='#fk'/><title>References BatchStudentAssignments ( batchStudentAssignmentId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'Menus' ============= -->
+<rect class='table' x='720' y='40' width='112' height='112' rx='8' ry='8' style='stroke:none'/>
+<path d='M 720.00 68.00 L 720.00 48.00 Q 720.00 40.00 728.00 40.00 L 824.00 40.00 Q 832.00 40.00 832.00 48.00 L 832.00 68.00 L720.00 68.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='720' y='40' width='112' height='112' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='720.000000' y1='68.000000' x2='832.000000' y2='68.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='736.000000' y1='68.000000' x2='736.000000' y2='152.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='820.000000' y1='68.000000' x2='820.000000' y2='152.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Menus'><text x='754' y='60'>Menus</text><title>Collection test.Menus</title></a>
+  <use id='nn' x='722' y='77' xlink:href='#nn'/><a xlink:href='#Menus._id'><text id='test.Menus._id' x='739' y='87' onmouseover="hghl(['MenuAccess_fk_menuaccess_menus'])" onmouseout="uhghl(['MenuAccess_fk_menuaccess_menus'])">_id</text><text x='816' y='88' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Menus._id'><use id='ref' x='820' y='76' xlink:href='#ref'/><title>Referred by MenuAccess ( menuId -&gt; _id ) </title></a>
+  <use id='nn' x='722' y='93' xlink:href='#nn'/><a xlink:href='#Menus.name'><text id='test.Menus.name' x='739' y='103'>name</text><text x='816' y='104' text-anchor='end' class='colType'>string</text><title>name
+* string</title></a>
+<text x='829' y='100' text-anchor='end' class='colType'>t</text>  <use id='nn' x='722' y='109' xlink:href='#nn'/><a xlink:href='#Menus.link'><text id='test.Menus.link' x='739' y='119'>link</text><text x='816' y='120' text-anchor='end' class='colType'>string</text><title>link
+* string</title></a>
+<text x='829' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='722' y='125' xlink:href='#nn'/><a xlink:href='#Menus.icon'><text id='test.Menus.icon' x='739' y='135'>icon</text><text x='816' y='136' text-anchor='end' class='colType'>string</text><title>icon
+* string</title></a>
+<text x='829' y='132' text-anchor='end' class='colType'>t</text>
+<!-- ============= Table 'Users' ============= -->
+<rect class='table' x='48' y='184' width='128' height='112' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 212.00 L 48.00 192.00 Q 48.00 184.00 56.00 184.00 L 168.00 184.00 Q 176.00 184.00 176.00 192.00 L 176.00 212.00 L48.00 212.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='184' width='128' height='112' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='48.000000' y1='212.000000' x2='176.000000' y2='212.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='64.000000' y1='212.000000' x2='64.000000' y2='296.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='164.000000' y1='212.000000' x2='164.000000' y2='296.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Users'><text x='93' y='204'>Users</text><title>Collection test.Users</title></a>
+  <use id='nn' x='50' y='221' xlink:href='#nn'/><a xlink:href='#Users._id'><use id='pk' x='50' y='220' xlink:href='#pk'/><title>Pk Idx_Users ( _id ) </title></a>
+<a xlink:href='#Users._id'><text id='test.Users._id' x='67' y='231' onmouseover="hghl(['BatchStudentAssignments_fk_batchstudentassignments_studentId','BatchStudents_fk_batchstudents_users','BatchTrainer_fk_batchtrainer_users_trainer'])" onmouseout="uhghl(['BatchStudentAssignments_fk_batchstudentassignments_studentId','BatchStudents_fk_batchstudents_users','BatchTrainer_fk_batchtrainer_users_trainer'])">_id</text><text x='160' y='232' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Users._id'><use id='ref' x='164' y='220' xlink:href='#ref'/><title>Referred by BatchStudentAssignments ( studentId -&gt; _id ) 
+Referred by BatchStudents ( studentId -&gt; _id ) 
+Referred by BatchTrainer ( trainerId -&gt; _id ) </title></a>
+  <use id='nn' x='50' y='237' xlink:href='#nn'/><a xlink:href='#Users.type'><text id='test.Users.type' x='67' y='247'>type</text><text x='160' y='248' text-anchor='end' class='colType'>string</text><title>type
+* string</title></a>
+<text x='173' y='244' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='253' xlink:href='#nn'/><a xlink:href='#Users.status'><text id='test.Users.status' x='67' y='263'>status</text><text x='160' y='264' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean default true</title></a>
+<text x='173' y='260' text-anchor='end' class='colType'>b</text>  <use id='nn' x='50' y='269' xlink:href='#nn'/><a xlink:href='#Users.profileId'><text id='test.Users.profileId' x='67' y='279' onmouseover="hghl(['Users_fk_users_profiles'])" onmouseout="uhghl(['Users_fk_users_profiles'])">profileId</text><text x='160' y='280' text-anchor='end' class='colType'>oid</text><title>profileId
+* oid</title></a>
+<a xlink:href='#Users.profileId'><use id='fk' x='164' y='268' xlink:href='#fk'/><title>References Profiles ( profileId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'Courses' ============= -->
+<rect class='table' x='48' y='328' width='128' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 356.00 L 48.00 336.00 Q 48.00 328.00 56.00 328.00 L 168.00 328.00 Q 176.00 328.00 176.00 336.00 L 176.00 356.00 L48.00 356.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='328' width='128' height='128' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='48.000000' y1='356.000000' x2='176.000000' y2='356.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='64.000000' y1='356.000000' x2='64.000000' y2='456.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='164.000000' y1='356.000000' x2='164.000000' y2='456.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Courses'><text x='87' y='348'>Courses</text><title>Collection test.Courses</title></a>
+  <use id='nn' x='50' y='365' xlink:href='#nn'/><a xlink:href='#Courses._id'><use id='pk' x='50' y='364' xlink:href='#pk'/><title>Pk Idx_Courses ( _id ) </title></a>
+<a xlink:href='#Courses._id'><text id='test.Courses._id' x='67' y='375' onmouseover="hghl(['Batchs_fk_batchs_courses','Topics_fk_topics_courses'])" onmouseout="uhghl(['Batchs_fk_batchs_courses','Topics_fk_topics_courses'])">_id</text><text x='160' y='376' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Courses._id'><use id='ref' x='164' y='364' xlink:href='#ref'/><title>Referred by Batchs ( courseId -&gt; _id ) 
+Referred by Topics ( courseId -&gt; _id ) </title></a>
+  <use id='nn' x='50' y='381' xlink:href='#nn'/><a xlink:href='#Courses.name'><text id='test.Courses.name' x='67' y='391'>name</text><text x='160' y='392' text-anchor='end' class='colType'>string</text><title>name
+* string</title></a>
+<text x='173' y='388' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Courses.img'><text id='test.Courses.img' x='67' y='407'>img</text><text x='160' y='408' text-anchor='end' class='colType'>string</text><title>img
+string</title></a>
+<text x='173' y='404' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='413' xlink:href='#nn'/><a xlink:href='#Courses.notes'><text id='test.Courses.notes' x='67' y='423'>notes</text><text x='160' y='424' text-anchor='end' class='colType'>string</text><title>notes
+* string</title></a>
+<text x='173' y='420' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='429' xlink:href='#nn'/><a xlink:href='#Courses.status'><text id='test.Courses.status' x='67' y='439'>status</text><text x='160' y='440' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean default true</title></a>
+<text x='173' y='436' text-anchor='end' class='colType'>b</text>
+<!-- ============= Table 'Topics' ============= -->
+<rect class='table' x='256' y='296' width='128' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 256.00 324.00 L 256.00 304.00 Q 256.00 296.00 264.00 296.00 L 376.00 296.00 Q 384.00 296.00 384.00 304.00 L 384.00 324.00 L256.00 324.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='256' y='296' width='128' height='144' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='256.000000' y1='324.000000' x2='384.000000' y2='324.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='272.000000' y1='324.000000' x2='272.000000' y2='440.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='372.000000' y1='324.000000' x2='372.000000' y2='440.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Topics'><text x='299' y='316'>Topics</text><title>Collection test.Topics</title></a>
+  <use id='nn' x='258' y='333' xlink:href='#nn'/><a xlink:href='#Topics._id'><use id='pk' x='258' y='332' xlink:href='#pk'/><title>Pk Idx_Topics ( _id ) </title></a>
+<a xlink:href='#Topics._id'><text id='test.Topics._id' x='275' y='343' onmouseover="hghl(['BatchAssignments_fk_batchassignments_topics','BatchCurriculums_fk_batchcurriculums_topics','Links_fk_videolinks_topics','Questions_fk_questions_topics'])" onmouseout="uhghl(['BatchAssignments_fk_batchassignments_topics','BatchCurriculums_fk_batchcurriculums_topics','Links_fk_videolinks_topics','Questions_fk_questions_topics'])">_id</text><text x='368' y='344' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Topics._id'><use id='ref' x='372' y='332' xlink:href='#ref'/><title>Referred by BatchAssignments ( topicId -&gt; _id ) 
+Referred by BatchCurriculums ( topicId -&gt; _id ) 
+Referred by Links ( topicId -&gt; _id ) 
+Referred by Questions ( topicId -&gt; _id ) </title></a>
+  <use id='nn' x='258' y='349' xlink:href='#nn'/><a xlink:href='#Topics.name'><text id='test.Topics.name' x='275' y='359'>name</text><text x='368' y='360' text-anchor='end' class='colType'>string</text><title>name
+* string</title></a>
+<text x='381' y='356' text-anchor='end' class='colType'>t</text>  <use id='nn' x='258' y='365' xlink:href='#nn'/><a xlink:href='#Topics.notes'><text id='test.Topics.notes' x='275' y='375'>notes</text><text x='368' y='376' text-anchor='end' class='colType'>string</text><title>notes
+* string</title></a>
+<text x='381' y='372' text-anchor='end' class='colType'>t</text>  <use id='nn' x='258' y='381' xlink:href='#nn'/><a xlink:href='#Topics.type'><text id='test.Topics.type' x='275' y='391'>type</text><text x='368' y='392' text-anchor='end' class='colType'>string</text><title>type
+* string default 'basic'</title></a>
+<text x='381' y='388' text-anchor='end' class='colType'>t</text>  <use id='nn' x='258' y='397' xlink:href='#nn'/><a xlink:href='#Topics.status'><text id='test.Topics.status' x='275' y='407'>status</text><text x='368' y='408' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean default true</title></a>
+<text x='381' y='404' text-anchor='end' class='colType'>b</text>  <use id='nn' x='258' y='413' xlink:href='#nn'/><a xlink:href='#Topics.courseId'><text id='test.Topics.courseId' x='275' y='423' onmouseover="hghl(['Topics_fk_topics_courses'])" onmouseout="uhghl(['Topics_fk_topics_courses'])">courseId</text><text x='368' y='424' text-anchor='end' class='colType'>oid</text><title>courseId
+* oid</title></a>
+<a xlink:href='#Topics.courseId'><use id='fk' x='372' y='412' xlink:href='#fk'/><title>References Courses ( courseId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'MenuAccess' ============= -->
+<rect class='table' x='512' y='40' width='128' height='112' rx='8' ry='8' style='stroke:none'/>
+<path d='M 512.00 68.00 L 512.00 48.00 Q 512.00 40.00 520.00 40.00 L 632.00 40.00 Q 640.00 40.00 640.00 48.00 L 640.00 68.00 L512.00 68.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='512' y='40' width='128' height='112' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='512.000000' y1='68.000000' x2='640.000000' y2='68.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='528.000000' y1='68.000000' x2='528.000000' y2='152.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='628.000000' y1='68.000000' x2='628.000000' y2='152.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#MenuAccess'><text x='539' y='60'>MenuAccess</text><title>Collection test.MenuAccess</title></a>
+  <use id='nn' x='514' y='77' xlink:href='#nn'/><a xlink:href='#MenuAccess._id'><text id='test.MenuAccess._id' x='531' y='87'>_id</text><text x='624' y='88' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <use id='nn' x='514' y='93' xlink:href='#nn'/><a xlink:href='#MenuAccess.role'><text id='test.MenuAccess.role' x='531' y='103'>role</text><text x='624' y='104' text-anchor='end' class='colType'>string</text><title>role
+* string</title></a>
+<text x='637' y='100' text-anchor='end' class='colType'>t</text>  <use id='nn' x='514' y='109' xlink:href='#nn'/><a xlink:href='#MenuAccess.menuId'><text id='test.MenuAccess.menuId' x='531' y='119' onmouseover="hghl(['MenuAccess_fk_menuaccess_menus'])" onmouseout="uhghl(['MenuAccess_fk_menuaccess_menus'])">menuId</text><text x='624' y='120' text-anchor='end' class='colType'>oid</text><title>menuId
+* oid</title></a>
+<a xlink:href='#MenuAccess.menuId'><use id='fk' x='628' y='108' xlink:href='#fk'/><title>References Menus ( menuId -&gt; _id ) </title></a>
+  <use id='nn' x='514' y='125' xlink:href='#nn'/><a xlink:href='#MenuAccess.status'><text id='test.MenuAccess.status' x='531' y='135'>status</text><text x='624' y='136' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean</title></a>
+<text x='637' y='132' text-anchor='end' class='colType'>b</text>
+<!-- ============= Table 'Questions' ============= -->
+<rect class='table' x='512' y='344' width='144' height='272' rx='8' ry='8' style='stroke:none'/>
+<path d='M 512.00 372.00 L 512.00 352.00 Q 512.00 344.00 520.00 344.00 L 648.00 344.00 Q 656.00 344.00 656.00 352.00 L 656.00 372.00 L512.00 372.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='512' y='344' width='144' height='272' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='512.000000' y1='372.000000' x2='656.000000' y2='372.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='528.000000' y1='372.000000' x2='528.000000' y2='616.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='644.000000' y1='372.000000' x2='644.000000' y2='616.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Questions'><text x='553' y='364'>Questions</text><title>Collection test.Questions</title></a>
+  <use id='nn' x='514' y='381' xlink:href='#nn'/><a xlink:href='#Questions._id'><use id='pk' x='514' y='380' xlink:href='#pk'/><title>Pk Idx_Questions ( _id ) </title></a>
+<a xlink:href='#Questions._id'><text id='test.Questions._id' x='531' y='391' onmouseover="hghl(['BatchAssignmentReviews_fk_batchassignmentreviews_questions'])" onmouseout="uhghl(['BatchAssignmentReviews_fk_batchassignmentreviews_questions'])">_id</text><text x='640' y='392' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Questions._id'><use id='ref' x='644' y='380' xlink:href='#ref'/><title>Referred by BatchAssignmentReviews ( questionId -&gt; _id ) </title></a>
+  <a xlink:href='#Questions.notes'><text id='test.Questions.notes' x='531' y='407'>notes</text><text x='640' y='408' text-anchor='end' class='colType'>string</text><title>notes
+string</title></a>
+<text x='653' y='404' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Questions.question'><text id='test.Questions.question' x='531' y='423'>question</text><text x='640' y='424' text-anchor='end' class='colType'>string</text><title>question
+string</title></a>
+<text x='653' y='420' text-anchor='end' class='colType'>t</text>  <use id='nn' x='514' y='429' xlink:href='#nn'/><a xlink:href='#Questions.isMultiAns'><text id='test.Questions.isMultiAns' x='531' y='439'>isMultiAns</text><text x='640' y='440' text-anchor='end' class='colType'>boolean</text><title>isMultiAns
+* boolean default true</title></a>
+<text x='653' y='436' text-anchor='end' class='colType'>b</text>  <a xlink:href='#Questions.optionA'><text id='test.Questions.optionA' x='531' y='455'>optionA</text><text x='640' y='456' text-anchor='end' class='colType'>string</text><title>optionA
+string</title></a>
+<text x='653' y='452' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Questions.checkA'><text id='test.Questions.checkA' x='531' y='471'>checkA</text><text x='640' y='472' text-anchor='end' class='colType'>boolean</text><title>checkA
+boolean default false</title></a>
+<text x='653' y='468' text-anchor='end' class='colType'>b</text>  <a xlink:href='#Questions.optionB'><text id='test.Questions.optionB' x='531' y='487'>optionB</text><text x='640' y='488' text-anchor='end' class='colType'>string</text><title>optionB
+string</title></a>
+<text x='653' y='484' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Questions.checkB'><text id='test.Questions.checkB' x='531' y='503'>checkB</text><text x='640' y='504' text-anchor='end' class='colType'>boolean</text><title>checkB
+boolean default false</title></a>
+<text x='653' y='500' text-anchor='end' class='colType'>b</text>  <a xlink:href='#Questions.optionC'><text id='test.Questions.optionC' x='531' y='519'>optionC</text><text x='640' y='520' text-anchor='end' class='colType'>string</text><title>optionC
+string</title></a>
+<text x='653' y='516' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Questions.checkC'><text id='test.Questions.checkC' x='531' y='535'>checkC</text><text x='640' y='536' text-anchor='end' class='colType'>boolean</text><title>checkC
+boolean default false</title></a>
+<text x='653' y='532' text-anchor='end' class='colType'>b</text>  <a xlink:href='#Questions.optionD'><text id='test.Questions.optionD' x='531' y='551'>optionD</text><text x='640' y='552' text-anchor='end' class='colType'>string</text><title>optionD
+string</title></a>
+<text x='653' y='548' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Questions.checkD'><text id='test.Questions.checkD' x='531' y='567'>checkD</text><text x='640' y='568' text-anchor='end' class='colType'>boolean</text><title>checkD
+boolean default false</title></a>
+<text x='653' y='564' text-anchor='end' class='colType'>b</text>  <use id='nn' x='514' y='573' xlink:href='#nn'/><a xlink:href='#Questions.status'><text id='test.Questions.status' x='531' y='583'>status</text><text x='640' y='584' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean default true</title></a>
+<text x='653' y='580' text-anchor='end' class='colType'>b</text>  <use id='nn' x='514' y='589' xlink:href='#nn'/><a xlink:href='#Questions.topicId'><text id='test.Questions.topicId' x='531' y='599' onmouseover="hghl(['Questions_fk_questions_topics'])" onmouseout="uhghl(['Questions_fk_questions_topics'])">topicId</text><text x='640' y='600' text-anchor='end' class='colType'>oid</text><title>topicId
+* oid</title></a>
+<a xlink:href='#Questions.topicId'><use id='fk' x='644' y='588' xlink:href='#fk'/><title>References Topics ( topicId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchForums' ============= -->
+<rect class='table' x='48' y='888' width='144' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 916.00 L 48.00 896.00 Q 48.00 888.00 56.00 888.00 L 184.00 888.00 Q 192.00 888.00 192.00 896.00 L 192.00 916.00 L48.00 916.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='888' width='144' height='144' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='48.000000' y1='916.000000' x2='192.000000' y2='916.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='64.000000' y1='916.000000' x2='64.000000' y2='1032.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='180.000000' y1='916.000000' x2='180.000000' y2='1032.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchForums'><text x='81' y='908'>BatchForums</text><title>Collection test.BatchForums</title></a>
+  <use id='nn' x='50' y='925' xlink:href='#nn'/><a xlink:href='#BatchForums._id'><use id='pk' x='50' y='924' xlink:href='#pk'/><title>Pk Idx_BatchForums ( _id ) </title></a>
+<a xlink:href='#BatchForums._id'><text id='test.BatchForums._id' x='67' y='935' onmouseover="hghl(['BatchForumComments_fk_batchforumcomments'])" onmouseout="uhghl(['BatchForumComments_fk_batchforumcomments'])">_id</text><text x='176' y='936' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#BatchForums._id'><use id='ref' x='180' y='924' xlink:href='#ref'/><title>Referred by BatchForumComments ( batchForumId -&gt; _id ) </title></a>
+  <a xlink:href='#BatchForums.query'><text id='test.BatchForums.query' x='67' y='951'>query</text><text x='176' y='952' text-anchor='end' class='colType'>string</text><title>query
+string</title></a>
+<text x='189' y='948' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchForums.updatedBy'><text id='test.BatchForums.updatedBy' x='67' y='967'>updatedBy</text><text x='176' y='968' text-anchor='end' class='colType'>string</text><title>updatedBy
+string</title></a>
+<text x='189' y='964' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchForums.updatedDate'><text id='test.BatchForums.updatedDate' x='67' y='983'>updatedDate</text><text x='176' y='984' text-anchor='end' class='colType'>date</text><title>updatedDate
+date</title></a>
+<text x='189' y='980' text-anchor='end' class='colType'>d</text>  <a xlink:href='#BatchForums.status'><text id='test.BatchForums.status' x='67' y='999'>status</text><text x='176' y='1000' text-anchor='end' class='colType'>boolean</text><title>status
+boolean</title></a>
+<text x='189' y='996' text-anchor='end' class='colType'>b</text>  <use id='nn' x='50' y='1005' xlink:href='#nn'/><a xlink:href='#BatchForums.batchId'><text id='test.BatchForums.batchId' x='67' y='1015' onmouseover="hghl(['BatchForums_fk_batchforums_batchs'])" onmouseout="uhghl(['BatchForums_fk_batchforums_batchs'])">batchId</text><text x='176' y='1016' text-anchor='end' class='colType'>oid</text><title>batchId
+* oid</title></a>
+<a xlink:href='#BatchForums.batchId'><use id='fk' x='180' y='1004' xlink:href='#fk'/><title>References Batchs ( batchId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchForumComments' ============= -->
+<rect class='table' x='288' y='904' width='144' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 288.00 932.00 L 288.00 912.00 Q 288.00 904.00 296.00 904.00 L 424.00 904.00 Q 432.00 904.00 432.00 912.00 L 432.00 932.00 L288.00 932.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='288' y='904' width='144' height='144' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='288.000000' y1='932.000000' x2='432.000000' y2='932.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='304.000000' y1='932.000000' x2='304.000000' y2='1048.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='420.000000' y1='932.000000' x2='420.000000' y2='1048.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchForumComments'><text x='295' y='924'>BatchForumComments</text><title>Collection test.BatchForumComments</title></a>
+  <use id='nn' x='290' y='941' xlink:href='#nn'/><a xlink:href='#BatchForumComments._id'><use id='pk' x='290' y='940' xlink:href='#pk'/><title>Pk Idx_BatchForumComments ( _id ) </title></a>
+<a xlink:href='#BatchForumComments._id'><text id='test.BatchForumComments._id' x='307' y='951'>_id</text><text x='416' y='952' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#BatchForumComments.comments'><text id='test.BatchForumComments.comments' x='307' y='967'>comments</text><text x='416' y='968' text-anchor='end' class='colType'>string</text><title>comments
+string</title></a>
+<text x='429' y='964' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchForumComments.updatedBy'><text id='test.BatchForumComments.updatedBy' x='307' y='983'>updatedBy</text><text x='416' y='984' text-anchor='end' class='colType'>string</text><title>updatedBy
+string</title></a>
+<text x='429' y='980' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchForumComments.updatedDate'><text id='test.BatchForumComments.updatedDate' x='307' y='999'>updatedDate</text><text x='416' y='1000' text-anchor='end' class='colType'>date</text><title>updatedDate
+date</title></a>
+<text x='429' y='996' text-anchor='end' class='colType'>d</text>  <a xlink:href='#BatchForumComments.status'><text id='test.BatchForumComments.status' x='307' y='1015'>status</text><text x='416' y='1016' text-anchor='end' class='colType'>boolean</text><title>status
+boolean</title></a>
+<text x='429' y='1012' text-anchor='end' class='colType'>b</text>  <use id='nn' x='290' y='1021' xlink:href='#nn'/><a xlink:href='#BatchForumComments.batchForumId'><text id='test.BatchForumComments.batchForumId' x='307' y='1031' onmouseover="hghl(['BatchForumComments_fk_batchforumcomments'])" onmouseout="uhghl(['BatchForumComments_fk_batchforumcomments'])">batchForumId</text><text x='416' y='1032' text-anchor='end' class='colType'>oid</text><title>batchForumId
+* oid</title></a>
+<a xlink:href='#BatchForumComments.batchForumId'><use id='fk' x='420' y='1020' xlink:href='#fk'/><title>References BatchForums ( batchForumId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchAssignments' ============= -->
+<rect class='table' x='272' y='712' width='144' height='160' rx='8' ry='8' style='stroke:none'/>
+<path d='M 272.00 740.00 L 272.00 720.00 Q 272.00 712.00 280.00 712.00 L 408.00 712.00 Q 416.00 712.00 416.00 720.00 L 416.00 740.00 L272.00 740.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='272' y='712' width='144' height='160' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='272.000000' y1='740.000000' x2='416.000000' y2='740.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='288.000000' y1='740.000000' x2='288.000000' y2='872.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='404.000000' y1='740.000000' x2='404.000000' y2='872.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchAssignments'><text x='291' y='732'>BatchAssignments</text><title>Collection test.BatchAssignments</title></a>
+  <use id='nn' x='274' y='749' xlink:href='#nn'/><a xlink:href='#BatchAssignments._id'><use id='pk' x='274' y='748' xlink:href='#pk'/><title>Pk Idx_BatchAssignments ( _id ) </title></a>
+<a xlink:href='#BatchAssignments._id'><text id='test.BatchAssignments._id' x='291' y='759' onmouseover="hghl(['BatchStudentAssignments_fk_batchstudentassignments'])" onmouseout="uhghl(['BatchStudentAssignments_fk_batchstudentassignments'])">_id</text><text x='400' y='760' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#BatchAssignments._id'><use id='ref' x='404' y='748' xlink:href='#ref'/><title>Referred by BatchStudentAssignments ( batchAssignmentId -&gt; _id ) </title></a>
+  <a xlink:href='#BatchAssignments.notes'><text id='test.BatchAssignments.notes' x='291' y='775'>notes</text><text x='400' y='776' text-anchor='end' class='colType'>string</text><title>notes
+string</title></a>
+<text x='413' y='772' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchAssignments.txnDate'><text id='test.BatchAssignments.txnDate' x='291' y='791'>txnDate</text><text x='400' y='792' text-anchor='end' class='colType'>date</text><title>txnDate
+date</title></a>
+<text x='413' y='788' text-anchor='end' class='colType'>d</text>  <a xlink:href='#BatchAssignments.passMarks'><text id='test.BatchAssignments.passMarks' x='291' y='807'>passMarks</text><text x='400' y='808' text-anchor='end' class='colType'>integer</text><title>passMarks
+integer default 80</title></a>
+<text x='413' y='804' text-anchor='end' class='colType'>#</text>  <a xlink:href='#BatchAssignments.status'><text id='test.BatchAssignments.status' x='291' y='823'>status</text><text x='400' y='824' text-anchor='end' class='colType'>boolean</text><title>status
+boolean</title></a>
+<text x='413' y='820' text-anchor='end' class='colType'>b</text>  <use id='nn' x='274' y='829' xlink:href='#nn'/><a xlink:href='#BatchAssignments.topicId'><text id='test.BatchAssignments.topicId' x='291' y='839' onmouseover="hghl(['BatchAssignments_fk_batchassignments_topics'])" onmouseout="uhghl(['BatchAssignments_fk_batchassignments_topics'])">topicId</text><text x='400' y='840' text-anchor='end' class='colType'>oid</text><title>topicId
+* oid</title></a>
+<a xlink:href='#BatchAssignments.topicId'><use id='fk' x='404' y='828' xlink:href='#fk'/><title>References Topics ( topicId -&gt; _id ) </title></a>
+  <use id='nn' x='274' y='845' xlink:href='#nn'/><a xlink:href='#BatchAssignments.batchId'><text id='test.BatchAssignments.batchId' x='291' y='855' onmouseover="hghl(['BatchAssignments_fk_batchassignments_batchs'])" onmouseout="uhghl(['BatchAssignments_fk_batchassignments_batchs'])">batchId</text><text x='400' y='856' text-anchor='end' class='colType'>oid</text><title>batchId
+* oid</title></a>
+<a xlink:href='#BatchAssignments.batchId'><use id='fk' x='404' y='844' xlink:href='#fk'/><title>References Batchs ( batchId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchTrainer' ============= -->
+<rect class='table' x='288' y='584' width='112' height='96' rx='8' ry='8' style='stroke:none'/>
+<path d='M 288.00 612.00 L 288.00 592.00 Q 288.00 584.00 296.00 584.00 L 392.00 584.00 Q 400.00 584.00 400.00 592.00 L 400.00 612.00 L288.00 612.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='288' y='584' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='288.000000' y1='612.000000' x2='400.000000' y2='612.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='304.000000' y1='612.000000' x2='304.000000' y2='680.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='388.000000' y1='612.000000' x2='388.000000' y2='680.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchTrainer'><text x='304' y='604'>BatchTrainer</text><title>Collection test.BatchTrainer</title></a>
+  <use id='nn' x='290' y='621' xlink:href='#nn'/><a xlink:href='#BatchTrainer._id'><use id='pk' x='290' y='620' xlink:href='#pk'/><title>Pk Idx_BatchTrainer ( _id ) </title></a>
+<a xlink:href='#BatchTrainer._id'><text id='test.BatchTrainer._id' x='307' y='631'>_id</text><text x='384' y='632' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <use id='nn' x='290' y='637' xlink:href='#nn'/><a xlink:href='#BatchTrainer.trainerId'><text id='test.BatchTrainer.trainerId' x='307' y='647' onmouseover="hghl(['BatchTrainer_fk_batchtrainer_users_trainer'])" onmouseout="uhghl(['BatchTrainer_fk_batchtrainer_users_trainer'])">trainerId</text><text x='384' y='648' text-anchor='end' class='colType'>oid</text><title>trainerId
+* oid</title></a>
+<a xlink:href='#BatchTrainer.trainerId'><use id='fk' x='388' y='636' xlink:href='#fk'/><title>References Users ( trainerId -&gt; _id ) </title></a>
+  <use id='nn' x='290' y='653' xlink:href='#nn'/><a xlink:href='#BatchTrainer.batchId'><text id='test.BatchTrainer.batchId' x='307' y='663' onmouseover="hghl(['BatchTrainer_fk_batchtrainer_batchs'])" onmouseout="uhghl(['BatchTrainer_fk_batchtrainer_batchs'])">batchId</text><text x='384' y='664' text-anchor='end' class='colType'>oid</text><title>batchId
+* oid</title></a>
+<a xlink:href='#BatchTrainer.batchId'><use id='fk' x='388' y='652' xlink:href='#fk'/><title>References Batchs ( batchId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchStudents' ============= -->
+<rect class='table' x='288' y='456' width='112' height='96' rx='8' ry='8' style='stroke:none'/>
+<path d='M 288.00 484.00 L 288.00 464.00 Q 288.00 456.00 296.00 456.00 L 392.00 456.00 Q 400.00 456.00 400.00 464.00 L 400.00 484.00 L288.00 484.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='288' y='456' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='288.000000' y1='484.000000' x2='400.000000' y2='484.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='304.000000' y1='484.000000' x2='304.000000' y2='552.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='388.000000' y1='484.000000' x2='388.000000' y2='552.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchStudents'><text x='300' y='476'>BatchStudents</text><title>Collection test.BatchStudents</title></a>
+  <use id='nn' x='290' y='493' xlink:href='#nn'/><a xlink:href='#BatchStudents._id'><use id='pk' x='290' y='492' xlink:href='#pk'/><title>Pk Idx_BatchStudents ( _id ) </title></a>
+<a xlink:href='#BatchStudents._id'><text id='test.BatchStudents._id' x='307' y='503'>_id</text><text x='384' y='504' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <use id='nn' x='290' y='509' xlink:href='#nn'/><a xlink:href='#BatchStudents.studentId'><text id='test.BatchStudents.studentId' x='307' y='519' onmouseover="hghl(['BatchStudents_fk_batchstudents_users'])" onmouseout="uhghl(['BatchStudents_fk_batchstudents_users'])">studentId</text><text x='384' y='520' text-anchor='end' class='colType'>oid</text><title>studentId
+* oid</title></a>
+<a xlink:href='#BatchStudents.studentId'><use id='fk' x='388' y='508' xlink:href='#fk'/><title>References Users ( studentId -&gt; _id ) </title></a>
+  <use id='nn' x='290' y='525' xlink:href='#nn'/><a xlink:href='#BatchStudents.batchId'><text id='test.BatchStudents.batchId' x='307' y='535' onmouseover="hghl(['BatchStudents_fk_batchstudents_batchs'])" onmouseout="uhghl(['BatchStudents_fk_batchstudents_batchs'])">batchId</text><text x='384' y='536' text-anchor='end' class='colType'>oid</text><title>batchId
+* oid</title></a>
+<a xlink:href='#BatchStudents.batchId'><use id='fk' x='388' y='524' xlink:href='#fk'/><title>References Batchs ( batchId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'BatchCurriculums' ============= -->
+<rect class='table' x='64' y='680' width='144' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 64.00 708.00 L 64.00 688.00 Q 64.00 680.00 72.00 680.00 L 200.00 680.00 Q 208.00 680.00 208.00 688.00 L 208.00 708.00 L64.00 708.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='64' y='680' width='144' height='144' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='64.000000' y1='708.000000' x2='208.000000' y2='708.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='80.000000' y1='708.000000' x2='80.000000' y2='824.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='196.000000' y1='708.000000' x2='196.000000' y2='824.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#BatchCurriculums'><text x='83' y='700'>BatchCurriculums</text><title>Collection test.BatchCurriculums</title></a>
+  <use id='nn' x='66' y='717' xlink:href='#nn'/><a xlink:href='#BatchCurriculums._id'><use id='pk' x='66' y='716' xlink:href='#pk'/><title>Pk Idx_BatchCurriculums ( _id ) </title></a>
+<a xlink:href='#BatchCurriculums._id'><text id='test.BatchCurriculums._id' x='83' y='727'>_id</text><text x='192' y='728' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#BatchCurriculums.room'><text id='test.BatchCurriculums.room' x='83' y='743'>room</text><text x='192' y='744' text-anchor='end' class='colType'>string</text><title>room
+string</title></a>
+<text x='205' y='740' text-anchor='end' class='colType'>t</text>  <a xlink:href='#BatchCurriculums.hrs'><text id='test.BatchCurriculums.hrs' x='83' y='759'>hrs</text><text x='192' y='760' text-anchor='end' class='colType'>integer</text><title>hrs
+integer</title></a>
+<text x='205' y='756' text-anchor='end' class='colType'>#</text>  <use id='nn' x='66' y='765' xlink:href='#nn'/><a xlink:href='#BatchCurriculums.batchId'><text id='test.BatchCurriculums.batchId' x='83' y='775' onmouseover="hghl(['BatchCurriculums_fk_batchcurriculums_batchs'])" onmouseout="uhghl(['BatchCurriculums_fk_batchcurriculums_batchs'])">batchId</text><text x='192' y='776' text-anchor='end' class='colType'>oid</text><title>batchId
+* oid</title></a>
+<a xlink:href='#BatchCurriculums.batchId'><use id='fk' x='196' y='764' xlink:href='#fk'/><title>References Batchs ( batchId -&gt; _id ) </title></a>
+  <use id='nn' x='66' y='781' xlink:href='#nn'/><a xlink:href='#BatchCurriculums.topicId'><text id='test.BatchCurriculums.topicId' x='83' y='791' onmouseover="hghl(['BatchCurriculums_fk_batchcurriculums_topics'])" onmouseout="uhghl(['BatchCurriculums_fk_batchcurriculums_topics'])">topicId</text><text x='192' y='792' text-anchor='end' class='colType'>oid</text><title>topicId
+* oid</title></a>
+<a xlink:href='#BatchCurriculums.topicId'><use id='fk' x='196' y='780' xlink:href='#fk'/><title>References Topics ( topicId -&gt; _id ) </title></a>
+  <a xlink:href='#BatchCurriculums.topicStatus'><text id='test.BatchCurriculums.topicStatus' x='83' y='807'>topicStatus</text><text x='192' y='808' text-anchor='end' class='colType'>string</text><title>topicStatus
+string default 'Not Start'</title></a>
+<text x='205' y='804' text-anchor='end' class='colType'>t</text>
+<!-- ============= Table 'Links' ============= -->
+<rect class='table' x='512' y='168' width='112' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 512.00 196.00 L 512.00 176.00 Q 512.00 168.00 520.00 168.00 L 616.00 168.00 Q 624.00 168.00 624.00 176.00 L 624.00 196.00 L512.00 196.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='512' y='168' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='512.000000' y1='196.000000' x2='624.000000' y2='196.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='528.000000' y1='196.000000' x2='528.000000' y2='296.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='612.000000' y1='196.000000' x2='612.000000' y2='296.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Links'><text x='550' y='188'>Links</text><title>Collection test.Links</title></a>
+  <use id='nn' x='514' y='205' xlink:href='#nn'/><a xlink:href='#Links._id'><use id='pk' x='514' y='204' xlink:href='#pk'/><title>Pk Idx_VideoLinks ( _id ) </title></a>
+<a xlink:href='#Links._id'><text id='test.Links._id' x='531' y='215'>_id</text><text x='608' y='216' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#Links.notes'><text id='test.Links.notes' x='531' y='231'>notes</text><text x='608' y='232' text-anchor='end' class='colType'>string</text><title>notes
+string</title></a>
+<text x='621' y='228' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Links.type'><text id='test.Links.type' x='531' y='247'>type</text><text x='608' y='248' text-anchor='end' class='colType'>string</text><title>type
+string</title></a>
+<text x='621' y='244' text-anchor='end' class='colType'>t</text>  <use id='nn' x='514' y='253' xlink:href='#nn'/><a xlink:href='#Links.link'><text id='test.Links.link' x='531' y='263'>link</text><text x='608' y='264' text-anchor='end' class='colType'>string</text><title>link
+* string</title></a>
+<text x='621' y='260' text-anchor='end' class='colType'>t</text>  <use id='nn' x='514' y='269' xlink:href='#nn'/><a xlink:href='#Links.topicId'><text id='test.Links.topicId' x='531' y='279' onmouseover="hghl(['Links_fk_videolinks_topics'])" onmouseout="uhghl(['Links_fk_videolinks_topics'])">topicId</text><text x='608' y='280' text-anchor='end' class='colType'>oid</text><title>topicId
+* oid</title></a>
+<a xlink:href='#Links.topicId'><use id='fk' x='612' y='268' xlink:href='#fk'/><title>References Topics ( topicId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'Profiles' ============= -->
+<rect class='table' x='256' y='56' width='128' height='192' rx='8' ry='8' style='stroke:none'/>
+<path d='M 256.00 84.00 L 256.00 64.00 Q 256.00 56.00 264.00 56.00 L 376.00 56.00 Q 384.00 56.00 384.00 64.00 L 384.00 84.00 L256.00 84.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='256' y='56' width='128' height='192' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='256.000000' y1='84.000000' x2='384.000000' y2='84.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='272.000000' y1='84.000000' x2='272.000000' y2='248.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='372.000000' y1='84.000000' x2='372.000000' y2='248.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Profiles'><text x='295' y='76'>Profiles</text><title>Collection test.Profiles</title></a>
+  <use id='nn' x='258' y='93' xlink:href='#nn'/><a xlink:href='#Profiles._id'><use id='pk' x='258' y='92' xlink:href='#pk'/><title>Pk Idx_Profiles ( _id ) </title></a>
+<a xlink:href='#Profiles._id'><text id='test.Profiles._id' x='275' y='103' onmouseover="hghl(['Profiles_fk_profiles_accounts','Accounts_fk_accounts_profiles','Users_fk_users_profiles'])" onmouseout="uhghl(['Profiles_fk_profiles_accounts','Accounts_fk_accounts_profiles','Users_fk_users_profiles'])">_id</text><text x='368' y='104' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Profiles._id'><use id='fk' x='372' y='92' xlink:href='#fk'/><title>References Accounts ( _id -&gt; profileId ) 
+Referred by Accounts ( profileId -&gt; _id ) 
+Referred by Users ( profileId -&gt; _id ) </title></a>
+  <use id='nn' x='258' y='109' xlink:href='#nn'/><a xlink:href='#Profiles.name'><text id='test.Profiles.name' x='275' y='119'>name</text><text x='368' y='120' text-anchor='end' class='colType'>string</text><title>name
+* string</title></a>
+<text x='381' y='116' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Profiles.email'><text id='test.Profiles.email' x='275' y='135'>email</text><text x='368' y='136' text-anchor='end' class='colType'>string</text><title>email
+string</title></a>
+<text x='381' y='132' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Profiles.mobile'><text id='test.Profiles.mobile' x='275' y='151'>mobile</text><text x='368' y='152' text-anchor='end' class='colType'>integer</text><title>mobile
+integer</title></a>
+<text x='381' y='148' text-anchor='end' class='colType'>#</text>  <a xlink:href='#Profiles.address'><text id='test.Profiles.address' x='275' y='167'>address</text><text x='368' y='168' text-anchor='end' class='colType'>string</text><title>address
+string</title></a>
+<text x='381' y='164' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Profiles.city'><text id='test.Profiles.city' x='275' y='183'>city</text><text x='368' y='184' text-anchor='end' class='colType'>string</text><title>city
+string</title></a>
+<text x='381' y='180' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Profiles.state'><text id='test.Profiles.state' x='275' y='199'>state</text><text x='368' y='200' text-anchor='end' class='colType'>string</text><title>state
+string</title></a>
+<text x='381' y='196' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Profiles.country'><text id='test.Profiles.country' x='275' y='215'>country</text><text x='368' y='216' text-anchor='end' class='colType'>string</text><title>country
+string</title></a>
+<text x='381' y='212' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Profiles.zipcode'><text id='test.Profiles.zipcode' x='275' y='231'>zipcode</text><text x='368' y='232' text-anchor='end' class='colType'>integer</text><title>zipcode
+integer</title></a>
+<text x='381' y='228' text-anchor='end' class='colType'>#</text>
+<!-- ============= Table 'Accounts' ============= -->
+<rect class='table' x='48' y='40' width='128' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 68.00 L 48.00 48.00 Q 48.00 40.00 56.00 40.00 L 168.00 40.00 Q 176.00 40.00 176.00 48.00 L 176.00 68.00 L48.00 68.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='40' width='128' height='128' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='48.000000' y1='68.000000' x2='176.000000' y2='68.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='64.000000' y1='68.000000' x2='64.000000' y2='168.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='164.000000' y1='68.000000' x2='164.000000' y2='168.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Accounts'><text x='83' y='60'>Accounts</text><title>Collection test.Accounts</title></a>
+  <use id='nn' x='50' y='77' xlink:href='#nn'/><a xlink:href='#Accounts._id'><use id='unq' x='50' y='76' xlink:href='#unq'/><title>Unq Pk_Accounts ( _id ) </title></a>
+<a xlink:href='#Accounts._id'><text id='test.Accounts._id' x='67' y='87' onmouseover="hghl(['Accounts_fk_accounts_profilereports','Accounts_fk_accounts_attendances','Accounts_fk_accounts_batchmembers'])" onmouseout="uhghl(['Accounts_fk_accounts_profilereports','Accounts_fk_accounts_attendances','Accounts_fk_accounts_batchmembers'])">_id</text><text x='160' y='88' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Accounts._id'><use id='fk' x='164' y='76' xlink:href='#fk'/><title>References ProfileReports ( _id -&gt; account ) 
+References Attendances ( _id -&gt; account ) 
+References BatchMembers ( _id -&gt; account ) </title></a>
+  <use id='nn' x='50' y='93' xlink:href='#nn'/><a xlink:href='#Accounts.password'><text id='test.Accounts.password' x='67' y='103'>password</text><text x='160' y='104' text-anchor='end' class='colType'>string</text><title>password
+* string</title></a>
+<text x='173' y='100' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='109' xlink:href='#nn'/><a xlink:href='#Accounts.role'><text id='test.Accounts.role' x='67' y='119'>role</text><text x='160' y='120' text-anchor='end' class='colType'>string</text><title>role
+* string</title></a>
+<text x='173' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='125' xlink:href='#nn'/><a xlink:href='#Accounts.profileId'><use id='unq' x='50' y='124' xlink:href='#unq'/><title>Unq Pk_Accounts ( profileId ) </title></a>
+<a xlink:href='#Accounts.profileId'><text id='test.Accounts.profileId' x='67' y='135' onmouseover="hghl(['Accounts_fk_accounts_profiles','Profiles_fk_profiles_accounts'])" onmouseout="uhghl(['Accounts_fk_accounts_profiles','Profiles_fk_profiles_accounts'])">profileId</text><text x='160' y='136' text-anchor='end' class='colType'>oid</text><title>profileId
+* oid
+(form)</title></a>
+<a xlink:href='#Accounts.profileId'><use id='fk' x='164' y='124' xlink:href='#fk'/><title>References Profiles ( profileId -&gt; _id ) 
+Referred by Profiles ( _id -&gt; profileId ) </title></a>
+  <use id='nn' x='50' y='141' xlink:href='#nn'/><a xlink:href='#Accounts.status'><text id='test.Accounts.status' x='67' y='151'>status</text><text x='160' y='152' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean</title></a>
+<text x='173' y='148' text-anchor='end' class='colType'>b</text>
+<!-- ============= Table 'Batchs' ============= -->
+<rect class='table' x='48' y='488' width='144' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 516.00 L 48.00 496.00 Q 48.00 488.00 56.00 488.00 L 184.00 488.00 Q 192.00 488.00 192.00 496.00 L 192.00 516.00 L48.00 516.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='488' width='144' height='128' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='48.000000' y1='516.000000' x2='192.000000' y2='516.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='64.000000' y1='516.000000' x2='64.000000' y2='616.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='180.000000' y1='516.000000' x2='180.000000' y2='616.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#Batchs'><text x='98' y='508'>Batchs</text><title>Collection test.Batchs</title></a>
+  <use id='nn' x='50' y='525' xlink:href='#nn'/><a xlink:href='#Batchs._id'><use id='pk' x='50' y='524' xlink:href='#pk'/><title>Pk Idx_Batchs ( _id ) </title></a>
+<a xlink:href='#Batchs._id'><text id='test.Batchs._id' x='67' y='535' onmouseover="hghl(['Batchs_fk_batchs_batchtimings','Batchs_fk_batchs_batchmembers','BatchAssignments_fk_batchassignments_batchs','BatchCurriculums_fk_batchcurriculums_batchs','BatchForums_fk_batchforums_batchs','BatchStudents_fk_batchstudents_batchs','BatchTrainer_fk_batchtrainer_batchs'])" onmouseout="uhghl(['Batchs_fk_batchs_batchtimings','Batchs_fk_batchs_batchmembers','BatchAssignments_fk_batchassignments_batchs','BatchCurriculums_fk_batchcurriculums_batchs','BatchForums_fk_batchforums_batchs','BatchStudents_fk_batchstudents_batchs','BatchTrainer_fk_batchtrainer_batchs'])">_id</text><text x='176' y='536' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+<a xlink:href='#Batchs._id'><use id='fk' x='180' y='524' xlink:href='#fk'/><title>References BatchTimings ( _id -&gt; batch ) 
+References BatchMembers ( _id -&gt; batch ) 
+Referred by BatchAssignments ( batchId -&gt; _id ) 
+Referred by BatchCurriculums ( batchId -&gt; _id ) 
+Referred by BatchForums ( batchId -&gt; _id ) 
+Referred by BatchStudents ( batchId -&gt; _id ) 
+Referred by BatchTrainer ( batchId -&gt; _id ) </title></a>
+  <a xlink:href='#Batchs.name'><text id='test.Batchs.name' x='67' y='551'>name</text><text x='176' y='552' text-anchor='end' class='colType'>string</text><title>name
+string</title></a>
+<text x='189' y='548' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Batchs.courseType'><text id='test.Batchs.courseType' x='67' y='567'>courseType</text><text x='176' y='568' text-anchor='end' class='colType'>string</text><title>courseType
+string default 'basic'</title></a>
+<text x='189' y='564' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Batchs.status'><text id='test.Batchs.status' x='67' y='583'>status</text><text x='176' y='584' text-anchor='end' class='colType'>boolean</text><title>status
+boolean</title></a>
+<text x='189' y='580' text-anchor='end' class='colType'>b</text>  <use id='nn' x='50' y='589' xlink:href='#nn'/><a xlink:href='#Batchs.courseId'><text id='test.Batchs.courseId' x='67' y='599' onmouseover="hghl(['Batchs_fk_batchs_courses'])" onmouseout="uhghl(['Batchs_fk_batchs_courses'])">courseId</text><text x='176' y='600' text-anchor='end' class='colType'>oid</text><title>courseId
+* oid</title></a>
+<a xlink:href='#Batchs.courseId'><use id='fk' x='180' y='588' xlink:href='#fk'/><title>References Courses ( courseId -&gt; _id ) </title></a>
+
+<!-- ============= Table 'AppDatas' ============= -->
+<rect class='table' x='688' y='376' width='128' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 688.00 404.00 L 688.00 384.00 Q 688.00 376.00 696.00 376.00 L 808.00 376.00 Q 816.00 376.00 816.00 384.00 L 816.00 404.00 L688.00 404.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='688' y='376' width='128' height='128' rx='8' ry='8' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='688.000000' y1='404.000000' x2='816.000000' y2='404.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='704.000000' y1='404.000000' x2='704.000000' y2='504.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='804.000000' y1='404.000000' x2='804.000000' y2='504.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#AppDatas'><text x='723' y='396'>AppDatas</text><title>Collection test.AppDatas</title></a>
+  <use id='nn' x='690' y='413' xlink:href='#nn'/><a xlink:href='#AppDatas._id'><use id='pk' x='690' y='412' xlink:href='#pk'/><title>Pk _id_ ( _id ) </title></a>
+<a xlink:href='#AppDatas._id'><text id='test.AppDatas._id' x='707' y='423'>_id</text><text x='800' y='424' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <use id='nn' x='690' y='429' xlink:href='#nn'/><a xlink:href='#AppDatas.name'><text id='test.AppDatas.name' x='707' y='439'>name</text><text x='800' y='440' text-anchor='end' class='colType'>string</text><title>name
+* string</title></a>
+<text x='813' y='436' text-anchor='end' class='colType'>t</text>  <use id='nn' x='690' y='445' xlink:href='#nn'/><a xlink:href='#AppDatas.code'><text id='test.AppDatas.code' x='707' y='455'>code</text><text x='800' y='456' text-anchor='end' class='colType'>string</text><title>code
+* string</title></a>
+<text x='813' y='452' text-anchor='end' class='colType'>t</text>  <use id='nn' x='690' y='461' xlink:href='#nn'/><a xlink:href='#AppDatas.key'><text id='test.AppDatas.key' x='707' y='471'>key</text><text x='800' y='472' text-anchor='end' class='colType'>string</text><title>key
+* string</title></a>
+<text x='813' y='468' text-anchor='end' class='colType'>t</text>  <use id='nn' x='690' y='477' xlink:href='#nn'/><a xlink:href='#AppDatas.status'><text id='test.AppDatas.status' x='707' y='487'>status</text><text x='800' y='488' text-anchor='end' class='colType'>boolean</text><title>status
+* boolean</title></a>
+<text x='813' y='484' text-anchor='end' class='colType'>b</text>
+<!-- ============= Table 'ProfileReports' ============= -->
+<rect class='table' x='640' y='168' width='144' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 640.00 196.00 L 640.00 176.00 Q 640.00 168.00 648.00 168.00 L 776.00 168.00 Q 784.00 168.00 784.00 176.00 L 784.00 196.00 L640.00 196.00 ' style='fill:url(#tbg_ffcccc);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='640' y='168' width='144' height='144' rx='8' ry='8' style='fill:none;stroke:#bfaeae'/>
+<line class='delim' x1='640.000000' y1='196.000000' x2='784.000000' y2='196.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='656.000000' y1='196.000000' x2='656.000000' y2='312.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='772.000000' y1='196.000000' x2='772.000000' y2='312.000000' style='stroke:#bfaeae'/>
+<a xlink:href='#ProfileReports'><text x='669' y='188'>ProfileReports</text><title>Collection test.ProfileReports</title></a>
+  <use id='nn' x='642' y='205' xlink:href='#nn'/><a xlink:href='#ProfileReports._id'><use id='pk' x='642' y='204' xlink:href='#pk'/><title>Pk Idx_ProfileReports ( _id ) </title></a>
+<a xlink:href='#ProfileReports._id'><text id='test.ProfileReports._id' x='659' y='215'>_id</text><text x='768' y='216' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#ProfileReports.joinDate'><text id='test.ProfileReports.joinDate' x='659' y='231'>joinDate</text><text x='768' y='232' text-anchor='end' class='colType'>date</text><title>joinDate
+date</title></a>
+<text x='781' y='228' text-anchor='end' class='colType'>d</text>  <a xlink:href='#ProfileReports.leaveDate'><text id='test.ProfileReports.leaveDate' x='659' y='247'>leaveDate</text><text x='768' y='248' text-anchor='end' class='colType'>date</text><title>leaveDate
+date</title></a>
+<text x='781' y='244' text-anchor='end' class='colType'>d</text>  <a xlink:href='#ProfileReports.account'><use id='unq' x='642' y='252' xlink:href='#unq'/><title>Unq idx_ProfileReports ( account ) </title></a>
+<a xlink:href='#ProfileReports.account'><text id='test.ProfileReports.account' x='659' y='263' onmouseover="hghl(['Accounts_fk_accounts_profilereports'])" onmouseout="uhghl(['Accounts_fk_accounts_profilereports'])">account</text><text x='768' y='264' text-anchor='end' class='colType'>string</text><title>account
+string</title></a>
+<a xlink:href='#ProfileReports.account'><use id='ref' x='772' y='252' xlink:href='#ref'/><title>Referred by Accounts ( _id -&gt; account ) </title></a>
+  <a xlink:href='#ProfileReports.updatedBy'><text id='test.ProfileReports.updatedBy' x='659' y='279'>updatedBy</text><text x='768' y='280' text-anchor='end' class='colType'>string</text><title>updatedBy
+string</title></a>
+<text x='781' y='276' text-anchor='end' class='colType'>t</text>  <a xlink:href='#ProfileReports.updatedDate'><text id='test.ProfileReports.updatedDate' x='659' y='295'>updatedDate</text><text x='768' y='296' text-anchor='end' class='colType'>date</text><title>updatedDate
+date</title></a>
+<text x='781' y='292' text-anchor='end' class='colType'>d</text>
+<!-- ============= Table 'Attendances' ============= -->
+<rect class='table' x='896' y='120' width='144' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 896.00 148.00 L 896.00 128.00 Q 896.00 120.00 904.00 120.00 L 1032.00 120.00 Q 1040.00 120.00 1040.00 128.00 L 1040.00 148.00 L896.00 148.00 ' style='fill:url(#tbg_ffcccc);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='896' y='120' width='144' height='144' rx='8' ry='8' style='fill:none;stroke:#bfaeae'/>
+<line class='delim' x1='896.000000' y1='148.000000' x2='1040.000000' y2='148.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='912.000000' y1='148.000000' x2='912.000000' y2='264.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='1028.000000' y1='148.000000' x2='1028.000000' y2='264.000000' style='stroke:#bfaeae'/>
+<a xlink:href='#Attendances'><text x='929' y='140'>Attendances</text><title>Collection test.Attendances</title></a>
+  <use id='nn' x='898' y='157' xlink:href='#nn'/><a xlink:href='#Attendances._id'><use id='pk' x='898' y='156' xlink:href='#pk'/><title>Pk Idx_Attendances ( _id ) </title></a>
+<a xlink:href='#Attendances._id'><text id='test.Attendances._id' x='915' y='167'>_id</text><text x='1024' y='168' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#Attendances.fromTime'><text id='test.Attendances.fromTime' x='915' y='183'>fromTime</text><text x='1024' y='184' text-anchor='end' class='colType'>date</text><title>fromTime
+date</title></a>
+<text x='1037' y='180' text-anchor='end' class='colType'>d</text>  <a xlink:href='#Attendances.toTime'><text id='test.Attendances.toTime' x='915' y='199'>toTime</text><text x='1024' y='200' text-anchor='end' class='colType'>date</text><title>toTime
+date</title></a>
+<text x='1037' y='196' text-anchor='end' class='colType'>d</text>  <a xlink:href='#Attendances.updatedBy'><text id='test.Attendances.updatedBy' x='915' y='215'>updatedBy</text><text x='1024' y='216' text-anchor='end' class='colType'>string</text><title>updatedBy
+string</title></a>
+<text x='1037' y='212' text-anchor='end' class='colType'>t</text>  <a xlink:href='#Attendances.updatedDate'><text id='test.Attendances.updatedDate' x='915' y='231'>updatedDate</text><text x='1024' y='232' text-anchor='end' class='colType'>date</text><title>updatedDate
+date</title></a>
+<text x='1037' y='228' text-anchor='end' class='colType'>d</text>  <a xlink:href='#Attendances.account'><use id='unq' x='898' y='236' xlink:href='#unq'/><title>Unq Pk_Attendances ( account ) </title></a>
+<a xlink:href='#Attendances.account'><text id='test.Attendances.account' x='915' y='247' onmouseover="hghl(['Accounts_fk_accounts_attendances'])" onmouseout="uhghl(['Accounts_fk_accounts_attendances'])">account</text><text x='1024' y='248' text-anchor='end' class='colType'>string</text><title>account
+string</title></a>
+<a xlink:href='#Attendances.account'><use id='ref' x='1028' y='236' xlink:href='#ref'/><title>Referred by Accounts ( _id -&gt; account ) </title></a>
+
+<!-- ============= Table 'BatchMembers' ============= -->
+<rect class='table' x='704' y='552' width='112' height='96' rx='8' ry='8' style='stroke:none'/>
+<path d='M 704.00 580.00 L 704.00 560.00 Q 704.00 552.00 712.00 552.00 L 808.00 552.00 Q 816.00 552.00 816.00 560.00 L 816.00 580.00 L704.00 580.00 ' style='fill:url(#tbg_ffcccc);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='704' y='552' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#bfaeae'/>
+<line class='delim' x1='704.000000' y1='580.000000' x2='816.000000' y2='580.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='720.000000' y1='580.000000' x2='720.000000' y2='648.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='804.000000' y1='580.000000' x2='804.000000' y2='648.000000' style='stroke:#bfaeae'/>
+<a xlink:href='#BatchMembers'><text x='715' y='572'>BatchMembers</text><title>Collection test.BatchMembers</title></a>
+  <use id='nn' x='706' y='589' xlink:href='#nn'/><a xlink:href='#BatchMembers._id'><use id='pk' x='706' y='588' xlink:href='#pk'/><title>Pk Idx_BatchMembers ( _id ) </title></a>
+<a xlink:href='#BatchMembers._id'><text id='test.BatchMembers._id' x='723' y='599'>_id</text><text x='800' y='600' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#BatchMembers.account'><use id='unq' x='706' y='604' xlink:href='#unq'/><title>Unq Pk_BatchMembers_0 ( account ) </title></a>
+<a xlink:href='#BatchMembers.account'><text id='test.BatchMembers.account' x='723' y='615' onmouseover="hghl(['Accounts_fk_accounts_batchmembers'])" onmouseout="uhghl(['Accounts_fk_accounts_batchmembers'])">account</text><text x='800' y='616' text-anchor='end' class='colType'>string</text><title>account
+string</title></a>
+<a xlink:href='#BatchMembers.account'><use id='ref' x='804' y='604' xlink:href='#ref'/><title>Referred by Accounts ( _id -&gt; account ) </title></a>
+  <a xlink:href='#BatchMembers.batch'><use id='unq' x='706' y='620' xlink:href='#unq'/><title>Unq Pk_BatchMembers ( batch ) </title></a>
+<a xlink:href='#BatchMembers.batch'><text id='test.BatchMembers.batch' x='723' y='631' onmouseover="hghl(['Batchs_fk_batchs_batchmembers'])" onmouseout="uhghl(['Batchs_fk_batchs_batchmembers'])">batch</text><text x='800' y='632' text-anchor='end' class='colType'>string</text><title>batch
+string</title></a>
+<a xlink:href='#BatchMembers.batch'><use id='ref' x='804' y='620' xlink:href='#ref'/><title>Referred by Batchs ( _id -&gt; batch ) </title></a>
+
+<!-- ============= Table 'BatchTimings' ============= -->
+<rect class='table' x='848' y='312' width='112' height='112' rx='8' ry='8' style='stroke:none'/>
+<path d='M 848.00 340.00 L 848.00 320.00 Q 848.00 312.00 856.00 312.00 L 952.00 312.00 Q 960.00 312.00 960.00 320.00 L 960.00 340.00 L848.00 340.00 ' style='fill:url(#tbg_ffcccc);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='848' y='312' width='112' height='112' rx='8' ry='8' style='fill:none;stroke:#bfaeae'/>
+<line class='delim' x1='848.000000' y1='340.000000' x2='960.000000' y2='340.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='864.000000' y1='340.000000' x2='864.000000' y2='424.000000' style='stroke:#bfaeae'/>
+<line class='delim' x1='948.000000' y1='340.000000' x2='948.000000' y2='424.000000' style='stroke:#bfaeae'/>
+<a xlink:href='#BatchTimings'><text x='864' y='332'>BatchTimings</text><title>Collection test.BatchTimings</title></a>
+  <use id='nn' x='850' y='349' xlink:href='#nn'/><a xlink:href='#BatchTimings._id'><use id='pk' x='850' y='348' xlink:href='#pk'/><title>Pk Idx_BatchTimings ( _id ) </title></a>
+<a xlink:href='#BatchTimings._id'><text id='test.BatchTimings._id' x='867' y='359'>_id</text><text x='944' y='360' text-anchor='end' class='colType'>oid</text><title>_id
+* oid</title></a>
+  <a xlink:href='#BatchTimings.inTime'><text id='test.BatchTimings.inTime' x='867' y='375'>inTime</text><text x='944' y='376' text-anchor='end' class='colType'>date</text><title>inTime
+date</title></a>
+<text x='957' y='372' text-anchor='end' class='colType'>d</text>  <a xlink:href='#BatchTimings.outTime'><text id='test.BatchTimings.outTime' x='867' y='391'>outTime</text><text x='944' y='392' text-anchor='end' class='colType'>date</text><title>outTime
+date</title></a>
+<text x='957' y='388' text-anchor='end' class='colType'>d</text>  <a xlink:href='#BatchTimings.batch'><use id='unq' x='850' y='396' xlink:href='#unq'/><title>Unq Pk_BatchTimings ( batch ) </title></a>
+<a xlink:href='#BatchTimings.batch'><text id='test.BatchTimings.batch' x='867' y='407' onmouseover="hghl(['Batchs_fk_batchs_batchtimings'])" onmouseout="uhghl(['Batchs_fk_batchs_batchtimings'])">batch</text><text x='944' y='408' text-anchor='end' class='colType'>string</text><title>batch
+string</title></a>
+<a xlink:href='#BatchTimings.batch'><use id='ref' x='948' y='396' xlink:href='#ref'/><title>Referred by Batchs ( _id -&gt; batch ) </title></a>
+
+</g></svg></div>
+
+
+<br/><br/>
+<div class='section-header'><a name='Accounts' onclick='window.scrollTo(60, 48);return false;' style='cursor:pointer;'><h2>Collection Accounts </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Accounts._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts.password'>password</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts.role'>role</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Accounts.profileId'>profileId</a></td>
+		<td> oid   </td>
+		<td> &#40;form&#41; </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>Pk&#95;Accounts</td>
+		<td> ON profileId</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>Pk&#95;Accounts</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_accounts_profiles</td>
+		<td > ( profileId ) ref <a href='#Profiles'>Profiles</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_accounts_profilereports</td>
+		<td > ( &#95;id ) ref <a href='#ProfileReports'>ProfileReports</a> (account) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_accounts_attendances</td>
+		<td > ( &#95;id ) ref <a href='#Attendances'>Attendances</a> (account) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_accounts_batchmembers</td>
+		<td > ( &#95;id ) ref <a href='#BatchMembers'>BatchMembers</a> (account) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='AppDatas' onclick='window.scrollTo(488, 384);return false;' style='cursor:pointer;'><h2>Collection AppDatas </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='AppDatas._id'>&#95;id</a></td>
+		<td> oid  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.code'>code</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.key'>key</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>&#95;id&#95;</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Attendances' onclick='window.scrollTo(696, 128);return false;' style='cursor:pointer;'><h2>Collection Attendances </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='Attendances._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Attendances.fromTime'>fromTime</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Attendances.toTime'>toTime</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Attendances.updatedBy'>updatedBy</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Attendances.updatedDate'>updatedDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Attendances.account'>account</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Attendances</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>Pk&#95;Attendances</td>
+		<td> ON account</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchAssignmentReviews' onclick='window.scrollTo(488, 688);return false;' style='cursor:pointer;'><h2>Collection BatchAssignmentReviews </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchAssignmentReviews._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignmentReviews.yourAns'>yourAns</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignmentReviews.isRightAns'>isRightAns</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignmentReviews.questionId'>questionId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignmentReviews.batchStudentAssignmentId'>batchStudentAssignmentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchAssignmentReviews</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignment_reviews</td>
+		<td > ( batchStudentAssignmentId ) ref <a href='#BatchStudentAssignments'>BatchStudentAssignments</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignmentreviews_questions</td>
+		<td > ( questionId ) ref <a href='#Questions'>Questions</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchAssignments' onclick='window.scrollTo(72, 720);return false;' style='cursor:pointer;'><h2>Collection BatchAssignments </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchAssignments._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.notes'>notes</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.txnDate'>txnDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.passMarks'>passMarks</a></td>
+		<td> integer   DEFAULT 80 </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignments.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignments.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchAssignments</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignments_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignments_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchCurriculums' onclick='window.scrollTo(60, 688);return false;' style='cursor:pointer;'><h2>Collection BatchCurriculums </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchCurriculums._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchCurriculums.room'>room</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchCurriculums.hrs'>hrs</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchCurriculums.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchCurriculums.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchCurriculums.topicStatus'>topicStatus</a></td>
+		<td> string   DEFAULT 'Not Start' </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchCurriculums</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchcurriculums_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchcurriculums_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchForumComments' onclick='window.scrollTo(88, 912);return false;' style='cursor:pointer;'><h2>Collection BatchForumComments </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchForumComments._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.comments'>comments</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.updatedBy'>updatedBy</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.updatedDate'>updatedDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchForumComments.batchForumId'>batchForumId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchForumComments</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchforumcomments</td>
+		<td > ( batchForumId ) ref <a href='#BatchForums'>BatchForums</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchForums' onclick='window.scrollTo(60, 896);return false;' style='cursor:pointer;'><h2>Collection BatchForums </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchForums._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.query'>query</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.updatedBy'>updatedBy</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.updatedDate'>updatedDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchForums.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchForums</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchforums_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchMembers' onclick='window.scrollTo(504, 560);return false;' style='cursor:pointer;'><h2>Collection BatchMembers </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchMembers._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchMembers.account'>account</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchMembers.batch'>batch</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchMembers</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>Pk&#95;BatchMembers&#95;0</td>
+		<td> ON account</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>Pk&#95;BatchMembers</td>
+		<td> ON batch</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchStudentAssignments' onclick='window.scrollTo(296, 672);return false;' style='cursor:pointer;'><h2>Collection BatchStudentAssignments </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchStudentAssignments._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchStudentAssignments.marks'>marks</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchStudentAssignments.txnDate'>txnDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchStudentAssignments.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudentAssignments.studentId'>studentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudentAssignments.batchAssignmentId'>batchAssignmentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchStudentAssignments</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudentassignments</td>
+		<td > ( batchAssignmentId ) ref <a href='#BatchAssignments'>BatchAssignments</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudentassignments_studentId</td>
+		<td > ( studentId ) ref <a href='#Users'>Users</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchStudents' onclick='window.scrollTo(88, 464);return false;' style='cursor:pointer;'><h2>Collection BatchStudents </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchStudents._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudents.studentId'>studentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudents.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchStudents</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudents_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudents_users</td>
+		<td > ( studentId ) ref <a href='#Users'>Users</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchTimings' onclick='window.scrollTo(648, 320);return false;' style='cursor:pointer;'><h2>Collection BatchTimings </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchTimings._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchTimings.inTime'>inTime</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchTimings.outTime'>outTime</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchTimings.batch'>batch</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchTimings</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>Pk&#95;BatchTimings</td>
+		<td> ON batch</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchTrainer' onclick='window.scrollTo(88, 592);return false;' style='cursor:pointer;'><h2>Collection BatchTrainer </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchTrainer._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchTrainer.trainerId'>trainerId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchTrainer.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchTrainer</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchtrainer_users_trainer</td>
+		<td > ( trainerId ) ref <a href='#Users'>Users</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchtrainer_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Batchs' onclick='window.scrollTo(60, 496);return false;' style='cursor:pointer;'><h2>Collection Batchs </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Batchs._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Batchs.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Batchs.courseType'>courseType</a></td>
+		<td> string   DEFAULT 'basic' </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Batchs.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Batchs.courseId'>courseId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Batchs</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchs_courses</td>
+		<td > ( courseId ) ref <a href='#Courses'>Courses</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchs_batchtimings</td>
+		<td > ( &#95;id ) ref <a href='#BatchTimings'>BatchTimings</a> (batch) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchs_batchmembers</td>
+		<td > ( &#95;id ) ref <a href='#BatchMembers'>BatchMembers</a> (batch) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Courses' onclick='window.scrollTo(60, 336);return false;' style='cursor:pointer;'><h2>Collection Courses </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Courses._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Courses.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Courses.img'>img</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Courses.notes'>notes</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Courses.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Courses</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Links' onclick='window.scrollTo(312, 176);return false;' style='cursor:pointer;'><h2>Collection Links </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='Links._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Links.notes'>notes</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Links.type'>type</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Links.link'>link</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Links.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;VideoLinks</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_videolinks_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='MenuAccess' onclick='window.scrollTo(312, 48);return false;' style='cursor:pointer;'><h2>Collection MenuAccess </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*</td>
+		<td><a name='MenuAccess._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='MenuAccess.role'>role</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='MenuAccess.menuId'>menuId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='MenuAccess.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_menuaccess_menus</td>
+		<td > ( menuId ) ref <a href='#Menus'>Menus</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Menus' onclick='window.scrollTo(520, 48);return false;' style='cursor:pointer;'><h2>Collection Menus </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Menus._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Menus.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Menus.link'>link</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Menus.icon'>icon</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='ProfileReports' onclick='window.scrollTo(440, 176);return false;' style='cursor:pointer;'><h2>Collection ProfileReports </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='ProfileReports._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='ProfileReports.joinDate'>joinDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='ProfileReports.leaveDate'>leaveDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='ProfileReports.account'>account</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='ProfileReports.updatedBy'>updatedBy</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='ProfileReports.updatedDate'>updatedDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;ProfileReports</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>idx&#95;ProfileReports</td>
+		<td> ON account</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Profiles' onclick='window.scrollTo(60, 64);return false;' style='cursor:pointer;'><h2>Collection Profiles </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Profiles._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Profiles.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.email'>email</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.mobile'>mobile</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.address'>address</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.city'>city</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.state'>state</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.country'>country</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.zipcode'>zipcode</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Profiles</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_profiles_accounts</td>
+		<td > ( &#95;id ) ref <a href='#Accounts'>Accounts</a> (profileId) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Questions' onclick='window.scrollTo(312, 352);return false;' style='cursor:pointer;'><h2>Collection Questions </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Questions._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.notes'>notes</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.question'>question</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Questions.isMultiAns'>isMultiAns</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionA'>optionA</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkA'>checkA</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionB'>optionB</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkB'>checkB</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionC'>optionC</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkC'>checkC</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionD'>optionD</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkD'>checkD</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Questions.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Questions.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Questions</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_questions_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Topics' onclick='window.scrollTo(60, 304);return false;' style='cursor:pointer;'><h2>Collection Topics </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Topics._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.notes'>notes</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.type'>type</a></td>
+		<td> string   DEFAULT 'basic' </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Topics.courseId'>courseId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Topics</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_topics_courses</td>
+		<td > ( courseId ) ref <a href='#Courses'>Courses</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Users' onclick='window.scrollTo(60, 192);return false;' style='cursor:pointer;'><h2>Collection Users </h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Users._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Users.type'>type</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Users.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Users.profileId'>profileId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Users</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_users_profiles</td>
+		<td > ( profileId ) ref <a href='#Profiles'>Profiles</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<p align='right'><a href='http://www.dbschema.com' style='color:#aaa'>Powered by DbSchema</a></p></body></html>

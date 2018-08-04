@@ -1,0 +1,180 @@
+appData
+	code
+	key
+	name
+	status
+
+account
+	password
+	role (default basic, admin, trainer, student)
+	profileId
+	status
+
+profile
+	firstName
+	lastName
+	mobile
+	email
+	address
+	city
+	state
+	country
+	pincode
+
+menu
+	name
+	link
+	icon
+	
+
+menuAccess
+	role
+	menuId
+	status
+
+
+user
+	profileId
+	type ( trainer or student)
+<<<<<<< HEAD
+	status
+=======
+>>>>>>> parent of cd5d276... Revert "Interfaces for Questions Batches etc"
+
+course
+	name
+	img
+	detail(description)
+	status
+
+topic
+	name
+	detail
+	type (advance, Intermediate, basic)
+	courseId
+	status
+
+weblink
+	topicId
+	detail
+	status
+
+vediolink
+	topicId
+	detail
+	status
+
+
+<<<<<<< HEAD
+batchCurriculum
+	room
+	hrs
+=======
+batchHistory
+	room
+	fromTime
+	toTime
+	date
+>>>>>>> parent of cd5d276... Revert "Interfaces for Questions Batches etc"
+	batchId
+	topicId
+	topicStatus( completed, inprogress, pending)
+
+batch
+	name
+<<<<<<< HEAD
+	courseId
+	courseType (advance, Intermediate, basic)
+	status
+
+batchTrainer
+	trainerId
+	batchId
+
+batchStudent
+	batchId
+	studentId
+=======
+	trainerId
+	supportTrainer
+	courseId
+	courseType (advance, Intermediate, basic)
+
+batchStudent
+	batchId
+	userId
+>>>>>>> parent of cd5d276... Revert "Interfaces for Questions Batches etc"
+
+batchForum
+	batchId
+	query
+	updatedBy
+	updateDate
+<<<<<<< HEAD
+	status
+
+batchForumComment
+	batchForumId
+	comments
+	updateBy
+	updateDate
+	status
+
+
+questions
+=======
+
+batchForumComment
+	batchForumId
+	comment
+	updateBy
+	updateDate
+
+assignment
+>>>>>>> parent of cd5d276... Revert "Interfaces for Questions Batches etc"
+	id
+	courseId
+	topicId
+	detail
+	question
+	isMultiAns ( true or false)
+	optionA
+	checkA ( true or false)
+	optionB
+	checkB ( true or false)
+	optionC
+	checkC ( true or false)
+	optionD
+	checkD ( true or false)
+<<<<<<< HEAD
+	status
+=======
+>>>>>>> parent of cd5d276... Revert "Interfaces for Questions Batches etc"
+
+batchAssignment
+	detail
+	batchId
+	txnDate
+	passMarks( default 80)
+	topicId
+<<<<<<< HEAD
+	status
+
+batchStudentAssignment
+	batchAssignmentId
+	studentId
+=======
+
+batchStudentAssignment
+	batchAssignmentId
+	userId
+>>>>>>> parent of cd5d276... Revert "Interfaces for Questions Batches etc"
+	marks
+	status( Assign, Pass, Fail)
+	txnDate
+
+batchAssigmentReview
+	batchStudentAssignmentId
+	questionId
+	YourAns
+	isRightAns(true, false)

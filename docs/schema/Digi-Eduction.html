@@ -1,0 +1,1177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'>
+<html>
+<head>
+<title>Digi&#45;Edu</title>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+<style type='text/css'>
+body {
+    font-family: 'Segoe UI', 'Lucida sans', Dialog;
+    font-size: 13px;
+    color: #444;
+    margin: 10px;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    caption-side: top;
+    width: auto;
+    margin: 10px 15px 5px 0;
+}
+
+
+.bordered td, .bordered th {
+   background-color: #fafafa;
+   border: 1px solid #D5D5D5;
+   padding: 3px 3px 3px 3px;
+   white-space:pre-wrap!important;
+}
+
+.bordered th {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 3px 3px 3px 3px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.section-header h2 {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: normal;
+    border-top: solid 1px #D5D5D5;
+    border-bottom: solid 1px #D5D5D5;
+    width: 95%;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    color: #4d82b8;
+}
+.section-header div {
+    font-size: 70%;
+    padding-left: 5px;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: #044282;
+  text-decoration: none;
+}
+
+th > a {
+    color:#858585;
+}
+
+.lg {
+    font-size: 110%;
+}
+
+h1 {
+    font-family: Verdana,Arial,Helvetica;
+    font-weight: normal;
+    color: #4d82b8;
+    margin: 20px 0 10px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+<object data='Digi-Eduction.svg' width='944' height='1214' type='image/svg+xml' >
+<embed src='Digi-Eduction.svg' width='944' height='1214' type='image/svg+xml' />
+<p>The <a href="http://www.adobe.com/svg/viewer/install/main.html">Adobe SVG Viewer</a> is required to view this image !</p></object>
+<br/><br/>
+<div class='section-header'><a name='BatchStudentAssignments' onclick='window.scrollTo(296, 672);return false;' style='cursor:pointer;'><h2>Collection BatchStudentAssignments</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchStudentAssignments._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchStudentAssignments.marks'>marks</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchStudentAssignments.txnDate'>txnDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchStudentAssignments.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudentAssignments.studentId'>studentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudentAssignments.batchAssignmentId'>batchAssignmentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchStudentAssignments</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudentassignments</td>
+		<td > ( batchAssignmentId ) ref <a href='#BatchAssignments'>BatchAssignments</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudentassignments_studentId</td>
+		<td > ( studentId ) ref <a href='#Users'>Users</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchAssignmentReviews' onclick='window.scrollTo(488, 688);return false;' style='cursor:pointer;'><h2>Collection BatchAssignmentReviews</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchAssignmentReviews._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignmentReviews.yourAns'>yourAns</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignmentReviews.isRightAns'>isRightAns</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignmentReviews.questionId'>questionId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignmentReviews.batchStudentAssignmentId'>batchStudentAssignmentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchAssignmentReviews</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignment_reviews</td>
+		<td > ( batchStudentAssignmentId ) ref <a href='#BatchStudentAssignments'>BatchStudentAssignments</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignmentreviews_questions</td>
+		<td > ( questionId ) ref <a href='#Questions'>Questions</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='WebLinks' onclick='window.scrollTo(488, 176);return false;' style='cursor:pointer;'><h2>Collection WebLinks</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='WebLinks.detail'>detail</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='WebLinks._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='WebLinks.link'>link</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='WebLinks.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='WebLinks.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;WebLinks</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_weblinks_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Menus' onclick='window.scrollTo(520, 48);return false;' style='cursor:pointer;'><h2>Collection Menus</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Menus._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Menus.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Menus.link'>link</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Menus.icon'>icon</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='VideoLinks' onclick='window.scrollTo(312, 176);return false;' style='cursor:pointer;'><h2>Collection VideoLinks</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='VideoLinks._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='VideoLinks.detail'>detail</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='VideoLinks.link'>link</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='VideoLinks.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='VideoLinks.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;VideoLinks</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_videolinks_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Users' onclick='window.scrollTo(60, 192);return false;' style='cursor:pointer;'><h2>Collection Users</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Users._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Users.type'>type</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Users.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Users.profileId'>profileId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Users</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_users_profiles</td>
+		<td > ( profileId ) ref <a href='#Profiles'>Profiles</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Courses' onclick='window.scrollTo(60, 336);return false;' style='cursor:pointer;'><h2>Collection Courses</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Courses._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Courses.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Courses.img'>img</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Courses.detail'>detail</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Courses.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Courses</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Topics' onclick='window.scrollTo(60, 304);return false;' style='cursor:pointer;'><h2>Collection Topics</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Topics._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.detail'>detail</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.type'>type</a></td>
+		<td> string   DEFAULT 'basic' </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Topics.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Topics.courseId'>courseId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Topics</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_topics_courses</td>
+		<td > ( courseId ) ref <a href='#Courses'>Courses</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='MenuAccess' onclick='window.scrollTo(312, 48);return false;' style='cursor:pointer;'><h2>Collection MenuAccess</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*</td>
+		<td><a name='MenuAccess._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='MenuAccess.role'>role</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='MenuAccess.menuId'>menuId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='MenuAccess.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_menuaccess_menus</td>
+		<td > ( menuId ) ref <a href='#Menus'>Menus</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Questions' onclick='window.scrollTo(312, 352);return false;' style='cursor:pointer;'><h2>Collection Questions</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Questions._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.detail'>detail</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.question'>question</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Questions.isMultiAns'>isMultiAns</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionA'>optionA</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkA'>checkA</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionB'>optionB</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkB'>checkB</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionC'>optionC</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkC'>checkC</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.optionD'>optionD</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Questions.checkD'>checkD</a></td>
+		<td> boolean   DEFAULT false </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Questions.status'>status</a></td>
+		<td> boolean   DEFAULT true </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Questions.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Questions</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_questions_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='AppDatas' onclick='window.scrollTo(504, 448);return false;' style='cursor:pointer;'><h2>Collection AppDatas</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='AppDatas._id'>&#95;id</a></td>
+		<td> oid  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.code'>code</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.key'>key</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='AppDatas.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>&#95;id&#95;</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchForums' onclick='window.scrollTo(60, 896);return false;' style='cursor:pointer;'><h2>Collection BatchForums</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchForums._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.query'>query</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.updatedBy'>updatedBy</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.updatedDate'>updatedDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForums.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchForums.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchForums</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchforums_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Accounts' onclick='window.scrollTo(60, 48);return false;' style='cursor:pointer;'><h2>Collection Accounts</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts.password'>password</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts.role'>role</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Accounts.profileId'>profileId</a></td>
+		<td> oid   </td>
+		<td> &#40;form&#41; </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Accounts.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_accounts_profiles</td>
+		<td > ( profileId ) ref <a href='#Profiles'>Profiles</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchForumComments' onclick='window.scrollTo(88, 912);return false;' style='cursor:pointer;'><h2>Collection BatchForumComments</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchForumComments._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.comments'>comments</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.updatedBy'>updatedBy</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.updatedDate'>updatedDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchForumComments.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchForumComments.batchForumId'>batchForumId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchForumComments</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchforumcomments</td>
+		<td > ( batchForumId ) ref <a href='#BatchForums'>BatchForums</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchAssignments' onclick='window.scrollTo(72, 720);return false;' style='cursor:pointer;'><h2>Collection BatchAssignments</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='BatchAssignments._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.detail'>detail</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.txnDate'>txnDate</a></td>
+		<td> date   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.passMarks'>passMarks</a></td>
+		<td> integer   DEFAULT 80 </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchAssignments.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignments.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchAssignments.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchAssignments</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignments_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchassignments_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Batchs' onclick='window.scrollTo(60, 496);return false;' style='cursor:pointer;'><h2>Collection Batchs</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Batchs._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Batchs.name'>name</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Batchs.courseType'>courseType</a></td>
+		<td> string   DEFAULT 'basic' </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Batchs.status'>status</a></td>
+		<td> boolean   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='Batchs.courseId'>courseId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;Batchs</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchs_courses</td>
+		<td > ( courseId ) ref <a href='#Courses'>Courses</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchTrainer' onclick='window.scrollTo(88, 592);return false;' style='cursor:pointer;'><h2>Collection BatchTrainer</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchTrainer._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchTrainer.trainerId'>trainerId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchTrainer.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchTrainer</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchtrainer_users_trainer</td>
+		<td > ( trainerId ) ref <a href='#Users'>Users</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchtrainer_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchStudents' onclick='window.scrollTo(88, 464);return false;' style='cursor:pointer;'><h2>Collection BatchStudents</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchStudents._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudents.studentId'>studentId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchStudents.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchStudents</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudents_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchstudents_users</td>
+		<td > ( studentId ) ref <a href='#Users'>Users</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='BatchCurriculums' onclick='window.scrollTo(60, 688);return false;' style='cursor:pointer;'><h2>Collection BatchCurriculums</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='BatchCurriculums._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchCurriculums.room'>room</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchCurriculums.hrs'>hrs</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchCurriculums.batchId'>batchId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='BatchCurriculums.topicId'>topicId</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='BatchCurriculums.topicStatus'>topicStatus</a></td>
+		<td> string   DEFAULT 'Not Start' </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>Idx&#95;BatchCurriculums</td>
+		<td> ON &#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Virtual Relations</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchcurriculums_batchs</td>
+		<td > ( batchId ) ref <a href='#Batchs'>Batchs</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_batchcurriculums_topics</td>
+		<td > ( topicId ) ref <a href='#Topics'>Topics</a> (&#95;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='Profiles' onclick='window.scrollTo(60, 64);return false;' style='cursor:pointer;'><h2>Collection Profiles</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='Profiles._id'>&#95;id</a></td>
+		<td> oid   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Profiles.firstname'>firstname</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='Profiles.lastname'>lastname</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.email'>email</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.mobile'>mobile</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.address'>address</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.city'>city</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.state'>state</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.country'>country</a></td>
+		<td> string   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='Profiles.zipcode'>zipcode</a></td>
+		<td> integer   </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<p align='right'><a href='http://www.dbschema.com' style='color:#aaa'>Powered by DbSchema</a></p></body></html>

@@ -1,0 +1,125 @@
+/programs:
+    put:
+        tags:
+            - Program
+        description:
+           Create save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null    
+                            name:
+                                type: PyStack
+                                example: "admin"            
+                            description:
+                                type: string
+                                example: "admin"                                         
+                            programType:
+                                type: string
+                                example: ""
+                            duration:
+                                type: string
+                                example: "3 Months"
+                            hours:
+                                type: number
+                                example: 60
+                            what: 
+                                type: string
+                                example: "Python is an high level interpreted language, and a NexGen technology that drives the software development and scientific learning . It has a lot of extended libraries to work with on various domains.Python has a powerful web framework Django for web development.It is also predominantly used for scripting at OS level."
+                            whatImage:
+                                type: string
+                                example: ""
+                            whatImageAlt:
+                                type: string
+                                example: ""
+                            avgSalary:
+                                type: number
+                                example: 450000
+                            techStack:
+                                type: array
+                                items:
+                                    type: string
+                                    example: "HTML"
+                            biggest:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        name:
+                                            type: string
+                                            example: "google"
+                                        url:
+                                            type: string
+                                            example: "/assets/images/teng.png"
+                                        alt:
+                                            type: string
+                                            example: "Trend"
+                            techCovered:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        name:
+                                            type: string
+                                            example: "HTML"
+                                        description:
+                                            type: string
+                                            example: "HTML Desc"
+                                        img:
+                                            type: string
+                                            example: "/assets/images/html.png"
+                                        imgAlt:
+                                            type: string
+                                            example: "Html "
+                            projects:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        name:
+                                            type: string
+                                            example: "Project 1"
+                                        description:
+                                            type: string
+                                            example: "My Project 1"
+                                        img:
+                                            type: string
+                                            example: "/assets/images/project.png"
+                                        imgAlt:
+                                            type: string
+                                            example: "pRojeyc"
+                            coverImage:
+                                type: string
+                                example: ""
+                            coverImageAlt:
+                                type: string
+                                example: ""  
+                            share:
+                                type: string
+                                example: 567
+                            rating:
+                                type: string
+                                example: 5.7
+                            slug:
+                                type: string
+                                example: "/fullstack-course"
+                            position:
+                                type: number
+                                example: 1
+                            curriculum:
+                                type: string
+                                example: "location"
+                            views:
+                                type: boolean
+                                example: true
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

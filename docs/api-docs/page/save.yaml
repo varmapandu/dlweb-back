@@ -1,0 +1,66 @@
+/page:
+    put:
+        tags:
+            - Page
+        description:
+            To Save Page content and Meta Data
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            name:
+                                type: string
+                                example: "Digital Lync"
+                            title:
+                                type: string
+                                example: "Courses"
+                            description:
+                                type: string
+                                example: "Content"
+                            meta:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        name:
+                                            type: string
+                                            example: "title"
+                                        content:
+                                            type: string
+                                            example: "Devops"                                
+                            video:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        url:
+                                            type: string
+                                            example: "title"
+                                        alt:
+                                            type: string
+                                            example: "Devops" 
+                            image:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        url:
+                                            type: string
+                                            example: "title"
+                                        alt:
+                                            type: string
+                                            example: "Devops" 
+                            slug:
+                                type: string
+                                example: "/courses"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

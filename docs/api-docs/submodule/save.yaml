@@ -1,0 +1,40 @@
+/submodule:
+    put:
+        tags:
+            - Sub Module
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            name:
+                                type: string
+                                example: ""
+                            description:
+                                type: string
+                                example: ""
+                            moduleImage:
+                                type: string
+                                example: "/assets/images/linux-digital-lync.png"
+                            moduleImageAlt:
+                                type: string
+                                example: "something" 
+                            position:
+                                type: number
+                                example: 1                               
+                            getBy:
+                                type: string
+                                example: "coursePage"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"
+

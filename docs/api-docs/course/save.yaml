@@ -1,0 +1,81 @@
+/course:
+    put:
+        tags:
+            - Course
+        description:
+           Create save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null    
+                            name:
+                                type: string
+                                example: "admin"            
+                            description:
+                                type: string
+                                example: "admin"                                        
+                            courseType:
+                                type: string
+                                example: ""
+                            duration:
+                                type: string
+                                example: "12 Weeks"
+                            hours:
+                                type: number
+                                example: 5
+                            why: 
+                                type: string
+                                example: ""
+                            whyImage:
+                                type: string
+                                example: ""
+                            whyImageAlt:
+                                type: string
+                                example: ""
+                            avgSalary:
+                                type: number
+                                example: 450000
+                            careerHead:
+                                type: string
+                                example: ""
+                            courseImage:
+                                type: string
+                                example: ""
+                            courseImageAlt:
+                                type: string
+                                example: ""  
+                            views:
+                                type: string
+                                example: 567
+                            share:
+                                type: string
+                                example: 567
+                            rating:
+                                type: string
+                                example: 5.7
+                            slug:
+                                type: string
+                                example: "/fullstack-course"
+                            position:
+                                type: number
+                                example: 1
+                            curriculum:
+                                type: string
+                                example: "location"
+                            isMain:
+                                type: boolean
+                                example: true
+                            mainCourse:
+                                type: string
+                                example: "name"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

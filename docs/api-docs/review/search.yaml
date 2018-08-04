@@ -1,0 +1,24 @@
+/review:
+    post:
+        tags:
+          - Review
+        description:
+            search.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            course:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: "59709a7c4b835f684c3fe87a"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

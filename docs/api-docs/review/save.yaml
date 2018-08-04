@@ -1,0 +1,36 @@
+/review:
+    put:
+        tags:
+            - Review
+        description:
+            save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null
+                            name:
+                                type: string
+                                example: "Components"
+                            detail:
+                                type: string
+                                example: "Description about topic"
+                            status:
+                                type: boolean
+                                example: true
+                            course:
+                                type: object
+                                properties:
+                                    _id:
+                                        type: string
+                                        example: null
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

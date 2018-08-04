@@ -1,0 +1,46 @@
+{
+  "name": "dl_website",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "digital-lync",
+  "repository": {
+    "url": "",
+    "type": "git"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "concurrently \"npm run tsc:w\" \"nodemon dist/app.js\"",
+    "tsc:w": "tsc -w",
+    "tsc:b": "tsc ",
+    "build": "npm-run-all clean tsc:b"
+  },
+  "engines": {
+    "node": ">= 8.11.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.15.2",
+    "curl": "^0.1.4",
+    "express": "4.15.3",
+    "group-array": "^0.3.3",
+    "ipware": "^1.0.0",
+    "moment": "^2.21.0",
+    "mongoose": "4.10.6",
+    "nodemailer": "^4.6.3",
+    "querystring": "^0.2.0",
+    "swagger-jsdoc": "1.9.5",
+    "swagger-ui-express": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "0.0.33",
+    "@types/express": "4.0.36",
+    "@types/mongoose": "4.7.18",
+    "@types/nodemailer": "^4.6.0",
+    "@types/swagger-jsdoc": "0.0.1",
+    "nodemon": "^1.10.0",
+    "concurrently": "^3.5.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "typescript": "2.4.1"
+  }
+}

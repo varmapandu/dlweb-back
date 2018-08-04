@@ -1,0 +1,78 @@
+/event:
+    put:
+        tags:
+            - Event
+        description:
+           Event save.
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            _id:
+                                type: string
+                                example: null    
+                            name:
+                                type: string
+                                example: "admin"            
+                            title:
+                                type: string
+                                example: "zfd"
+                            description:
+                                type: string
+                                example: "weekdays"
+                            slug:
+                                type: string
+                                example: "Upcoming / Ongoing / Online"
+                            image:
+                                type: string
+                                example: ""
+                            imageAlt:
+                                type: string
+                                example: "20"
+                            location:
+                                type: string
+                                example: "Gachibowli"
+                            address:
+                                type: string
+                                example: "India"  
+                            eventDate:
+                                type: string
+                                example: "DevOps"
+                            timing:
+                                type: string
+                                example: "Gachibowli"
+                            about:
+                                type: array
+                                items:
+                                    type: string
+                                    example: "sdfd"
+                            topics:
+                                type: array
+                                items:
+                                    type: string
+                                    example: "sdfd"
+                            speakers:
+                                type: array
+                                items:
+                                    type: object
+                                    properties:
+                                        name:
+                                            type: string
+                                            example: "title"
+                                        description:
+                                            type: string
+                                            example: "Devops"  
+                            color:
+                                type: string
+                                example: "DevOps"
+                            rate:
+                                type: number
+                                example: 499
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"
